@@ -15,6 +15,7 @@
 		2E5E89D5257CA508000A6C02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E89D3257CA508000A6C02 /* LaunchScreen.storyboard */; };
 		2E5E89DF257CA73F000A6C02 /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E89DE257CA73F000A6C02 /* TwoSum.swift */; };
 		2E5E8A4A257CAE67000A6C02 /* TwoSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E8A49257CAE67000A6C02 /* TwoSumTests.swift */; };
+		2E5E8A4C257CD351000A6C02 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E8A4B257CD351000A6C02 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		2E5E8A3F257CAE0C000A6C02 /* LeetCode-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LeetCode-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E5E8A43257CAE0C000A6C02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E5E8A49257CAE67000A6C02 /* TwoSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumTests.swift; sourceTree = "<group>"; };
+		2E5E8A4B257CD351000A6C02 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		2E5E89C7257CA505000A6C02 /* LeetCode-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				2E5E8A4B257CD351000A6C02 /* README.md */,
 				2E5E89C8257CA506000A6C02 /* AppDelegate.swift */,
 				2E5E89CA257CA506000A6C02 /* SceneDelegate.swift */,
 				2E5E89CC257CA506000A6C02 /* ViewController.swift */,
@@ -193,6 +196,7 @@
 			files = (
 				2E5E89D5257CA508000A6C02 /* LaunchScreen.storyboard in Resources */,
 				2E5E89D2257CA508000A6C02 /* Assets.xcassets in Resources */,
+				2E5E8A4C257CD351000A6C02 /* README.md in Resources */,
 				2E5E89D0257CA506000A6C02 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

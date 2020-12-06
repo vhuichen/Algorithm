@@ -1,2 +1,6 @@
 # LeetCode-Swift
-Swift + XCTest
+Swift编写 ，XCTest单元测试   
+
+已完成   
+1、两数之和
+
