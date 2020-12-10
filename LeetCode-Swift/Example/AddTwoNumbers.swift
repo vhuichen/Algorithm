@@ -18,6 +18,9 @@ public class ListNode {
 
 /// 2. 两数相加
 extension Solution {
+    /*
+     需要考虑向前进位的情况
+     */
     func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
         if l1 == nil {
             return l2

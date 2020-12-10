@@ -24,7 +24,7 @@ class AddTwoNumbersTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
         let solution = Solution();
-        
+        //测试用例：链表长度不相等，有进位符
         var l1 = ListNode(9);
         l1 = ListNode(9, l1);
         l1 = ListNode(9, l1);
