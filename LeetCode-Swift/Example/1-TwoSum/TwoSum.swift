@@ -6,8 +6,9 @@
 //  Copyright © 2020 vhuichen. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
+/// 1. 两数之和
 class Solution {
     /*
      利用哈希表空间换时间，每遍历一次，将对应的 num 以及 index 存放在哈希表中，key 是 num, value 是 index

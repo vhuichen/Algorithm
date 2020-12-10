@@ -16,6 +16,8 @@
 		2E5E89DF257CA73F000A6C02 /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E89DE257CA73F000A6C02 /* TwoSum.swift */; };
 		2E5E8A4A257CAE67000A6C02 /* TwoSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E8A49257CAE67000A6C02 /* TwoSumTests.swift */; };
 		2E5E8A4C257CD351000A6C02 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E8A4B257CD351000A6C02 /* README.md */; };
+		2E610B10257DD698007BD153 /* AddTwoNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E610B0F257DD698007BD153 /* AddTwoNumbers.swift */; };
+		2E9B6C5E257E0027005600ED /* AddTwoNumbersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9B6C5D257E0027005600ED /* AddTwoNumbersTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		2E5E8A43257CAE0C000A6C02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E5E8A49257CAE67000A6C02 /* TwoSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumTests.swift; sourceTree = "<group>"; };
 		2E5E8A4B257CD351000A6C02 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		2E610B0F257DD698007BD153 /* AddTwoNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTwoNumbers.swift; sourceTree = "<group>"; };
+		2E9B6C5D257E0027005600ED /* AddTwoNumbersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTwoNumbersTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				2E5E89DE257CA73F000A6C02 /* TwoSum.swift */,
+				2E610B0F257DD698007BD153 /* AddTwoNumbers.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -109,6 +114,7 @@
 			children = (
 				2E5E8A43257CAE0C000A6C02 /* Info.plist */,
 				2E5E8A49257CAE67000A6C02 /* TwoSumTests.swift */,
+				2E9B6C5D257E0027005600ED /* AddTwoNumbersTests.swift */,
 			);
 			path = "LeetCode-SwiftTests";
 			sourceTree = "<group>";
@@ -215,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E610B10257DD698007BD153 /* AddTwoNumbers.swift in Sources */,
 				2E5E89CD257CA506000A6C02 /* ViewController.swift in Sources */,
 				2E5E89C9257CA506000A6C02 /* AppDelegate.swift in Sources */,
 				2E5E89DF257CA73F000A6C02 /* TwoSum.swift in Sources */,
@@ -227,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E5E8A4A257CAE67000A6C02 /* TwoSumTests.swift in Sources */,
+				2E9B6C5E257E0027005600ED /* AddTwoNumbersTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
