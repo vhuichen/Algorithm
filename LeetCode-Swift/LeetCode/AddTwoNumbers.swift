@@ -22,38 +22,30 @@ extension Solution {
      需要考虑向前进位的情况
      */
     func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
-        if l1 == nil {
-            return l2
-        }
-        if l2 == nil {
-            return l1
-        }
+        if l1 == nil { return l2 }
+        if l2 == nil { return l1 }
         
-        var result:ListNode? = nil
-        var resultTmp:ListNode?
+        let head = ListNode()
+        var lastNode = head
         var l1Tmp = l1
         var l2Tmp = l2
-        var carryNumber:Int = 0
-        var value:Int = 0
+        var flag:Int = 0
+        var val:Int = 0
         
-        while ((l1Tmp != nil)  || (l2Tmp != nil) || (carryNumber > 0)) {
-            value = (l1Tmp?.val ?? 0) + (l2Tmp?.val ?? 0) + carryNumber
+        while ((l1Tmp != nil)  || (l2Tmp != nil) || (flag > 0)) {
+            val = (l1Tmp?.val ?? 0) + (l2Tmp?.val ?? 0) + flag
             
-            carryNumber = value / 10
-            value = value % 10
+            flag = val / 10
+            val = val % 10
             
-            if result == nil {
-                result = ListNode(value)
-                resultTmp = result
-            } else {
-                resultTmp!.next = ListNode(value)
-                resultTmp = resultTmp!.next
-            }
+            lastNode.next = ListNode(val)
+            lastNode = lastNode.next!
+            
             l1Tmp = l1Tmp?.next
             l2Tmp = l2Tmp?.next
         }
         
-        return result
+        return head.next
     }
 }
 

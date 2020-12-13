@@ -23,15 +23,15 @@ class AddTwoNumbersTests: XCTestCase {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
-        let solution = Solution();
+        let solution = Solution()
         //测试用例：链表长度不相等，有进位符
-        var l1 = ListNode(9);
-        l1 = ListNode(9, l1);
-        l1 = ListNode(9, l1);
-        l1 = ListNode(9, l1);
+        var l1 = ListNode(9)
+        l1 = ListNode(9, l1)
+        l1 = ListNode(9, l1)
+        l1 = ListNode(9, l1)
         
-        var l2 = ListNode(9);
-        l2 = ListNode(9, l2);
+        var l2 = ListNode(9)
+        l2 = ListNode(9, l2)
         
         let sumListNode = solution.addTwoNumbers(l1, l2)
         
