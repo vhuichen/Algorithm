@@ -21,6 +21,8 @@
 		2E8A18512585005A00662AE5 /* FindMedianSortedArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A18502585005A00662AE5 /* FindMedianSortedArrays.swift */; };
 		2E8A18552585007000662AE5 /* FindMedianSortedArraysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A18542585007000662AE5 /* FindMedianSortedArraysTests.swift */; };
 		2E9B6C5E257E0027005600ED /* AddTwoNumbersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9B6C5D257E0027005600ED /* AddTwoNumbersTests.swift */; };
+		2EEA459D258703C60091EBD6 /* LongestPalindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEA459C258703C60091EBD6 /* LongestPalindrome.swift */; };
+		2EEA45A1258703DC0091EBD6 /* LongestPalindromeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEA45A0258703DC0091EBD6 /* LongestPalindromeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		2E8A18502585005A00662AE5 /* FindMedianSortedArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMedianSortedArrays.swift; sourceTree = "<group>"; };
 		2E8A18542585007000662AE5 /* FindMedianSortedArraysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMedianSortedArraysTests.swift; sourceTree = "<group>"; };
 		2E9B6C5D257E0027005600ED /* AddTwoNumbersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTwoNumbersTests.swift; sourceTree = "<group>"; };
+		2EEA459C258703C60091EBD6 /* LongestPalindrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestPalindrome.swift; sourceTree = "<group>"; };
+		2EEA45A0258703DC0091EBD6 /* LongestPalindromeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestPalindromeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 				2E9B6C5D257E0027005600ED /* AddTwoNumbersTests.swift */,
 				2E8A183D258285AF00662AE5 /* LongestSubstringTests.swift */,
 				2E8A18542585007000662AE5 /* FindMedianSortedArraysTests.swift */,
+				2EEA45A0258703DC0091EBD6 /* LongestPalindromeTests.swift */,
 			);
 			path = "LeetCode-SwiftTests";
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 				2E8A18482582864C00662AE5 /* AddTwoNumbers.swift */,
 				2E8A18462582864C00662AE5 /* LengthOfLongestSubstring.swift */,
 				2E8A18502585005A00662AE5 /* FindMedianSortedArrays.swift */,
+				2EEA459C258703C60091EBD6 /* LongestPalindrome.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -230,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E8A184B2582864C00662AE5 /* AddTwoNumbers.swift in Sources */,
+				2EEA459D258703C60091EBD6 /* LongestPalindrome.swift in Sources */,
 				2E5E89CD257CA506000A6C02 /* ViewController.swift in Sources */,
 				2E8A18492582864C00662AE5 /* LengthOfLongestSubstring.swift in Sources */,
 				2E8A18512585005A00662AE5 /* FindMedianSortedArrays.swift in Sources */,
@@ -246,6 +253,7 @@
 				2E5E8A4A257CAE67000A6C02 /* TwoSumTests.swift in Sources */,
 				2E9B6C5E257E0027005600ED /* AddTwoNumbersTests.swift in Sources */,
 				2E8A183E258285AF00662AE5 /* LongestSubstringTests.swift in Sources */,
+				2EEA45A1258703DC0091EBD6 /* LongestPalindromeTests.swift in Sources */,
 				2E8A18552585007000662AE5 /* FindMedianSortedArraysTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
