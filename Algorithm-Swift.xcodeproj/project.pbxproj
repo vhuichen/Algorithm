@@ -31,19 +31,19 @@
 			containerPortal = 2E5E89BD257CA505000A6C02 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2E5E89C4257CA505000A6C02;
-			remoteInfo = "LeetCode-Swift";
+			remoteInfo = "Algorithm-Swift";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2E5E89C5257CA505000A6C02 /* LeetCode-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LeetCode-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E5E89C5257CA505000A6C02 /* Algorithm-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Algorithm-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E5E89C8257CA506000A6C02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E5E89CA257CA506000A6C02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2E5E89CC257CA506000A6C02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2E5E89D1257CA508000A6C02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E5E89D4257CA508000A6C02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E5E89D6257CA508000A6C02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E5E8A3F257CAE0C000A6C02 /* LeetCode-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LeetCode-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E5E8A3F257CAE0C000A6C02 /* Algorithm-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Algorithm-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E5E8A43257CAE0C000A6C02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E5E8A49257CAE67000A6C02 /* TwoSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumTests.swift; sourceTree = "<group>"; };
 		2E5E8A4B257CD351000A6C02 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
@@ -79,8 +79,8 @@
 		2E5E89BC257CA505000A6C02 = {
 			isa = PBXGroup;
 			children = (
-				2E5E89C7257CA505000A6C02 /* LeetCode-Swift */,
-				2E5E8A40257CAE0C000A6C02 /* LeetCode-SwiftTests */,
+				2E5E89C7257CA505000A6C02 /* Algorithm-Swift */,
+				2E5E8A40257CAE0C000A6C02 /* Algorithm-SwiftTests */,
 				2E5E89C6257CA505000A6C02 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,13 +88,13 @@
 		2E5E89C6257CA505000A6C02 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2E5E89C5257CA505000A6C02 /* LeetCode-Swift.app */,
-				2E5E8A3F257CAE0C000A6C02 /* LeetCode-SwiftTests.xctest */,
+				2E5E89C5257CA505000A6C02 /* Algorithm-Swift.app */,
+				2E5E8A3F257CAE0C000A6C02 /* Algorithm-SwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2E5E89C7257CA505000A6C02 /* LeetCode-Swift */ = {
+		2E5E89C7257CA505000A6C02 /* Algorithm-Swift */ = {
 			isa = PBXGroup;
 			children = (
 				2E5E8A4B257CD351000A6C02 /* README.md */,
@@ -106,10 +106,10 @@
 				2E5E89D3257CA508000A6C02 /* LaunchScreen.storyboard */,
 				2E8A18452582864C00662AE5 /* LeetCode */,
 			);
-			path = "LeetCode-Swift";
+			path = "Algorithm-Swift";
 			sourceTree = "<group>";
 		};
-		2E5E8A40257CAE0C000A6C02 /* LeetCode-SwiftTests */ = {
+		2E5E8A40257CAE0C000A6C02 /* Algorithm-SwiftTests */ = {
 			isa = PBXGroup;
 			children = (
 				2E5E8A43257CAE0C000A6C02 /* Info.plist */,
@@ -119,7 +119,7 @@
 				2E8A18542585007000662AE5 /* FindMedianSortedArraysTests.swift */,
 				2EEA45A0258703DC0091EBD6 /* LongestPalindromeTests.swift */,
 			);
-			path = "LeetCode-SwiftTests";
+			path = "Algorithm-SwiftTests";
 			sourceTree = "<group>";
 		};
 		2E8A18452582864C00662AE5 /* LeetCode */ = {
@@ -137,9 +137,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2E5E89C4257CA505000A6C02 /* LeetCode-Swift */ = {
+		2E5E89C4257CA505000A6C02 /* Algorithm-Swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E5E89D9257CA508000A6C02 /* Build configuration list for PBXNativeTarget "LeetCode-Swift" */;
+			buildConfigurationList = 2E5E89D9257CA508000A6C02 /* Build configuration list for PBXNativeTarget "Algorithm-Swift" */;
 			buildPhases = (
 				2E5E89C1257CA505000A6C02 /* Sources */,
 				2E5E89C2257CA505000A6C02 /* Frameworks */,
@@ -149,14 +149,14 @@
 			);
 			dependencies = (
 			);
-			name = "LeetCode-Swift";
-			productName = "LeetCode-Swift";
-			productReference = 2E5E89C5257CA505000A6C02 /* LeetCode-Swift.app */;
+			name = "Algorithm-Swift";
+			productName = "Algorithm-Swift";
+			productReference = 2E5E89C5257CA505000A6C02 /* Algorithm-Swift.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2E5E8A3E257CAE0C000A6C02 /* LeetCode-SwiftTests */ = {
+		2E5E8A3E257CAE0C000A6C02 /* Algorithm-SwiftTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E5E8A46257CAE0C000A6C02 /* Build configuration list for PBXNativeTarget "LeetCode-SwiftTests" */;
+			buildConfigurationList = 2E5E8A46257CAE0C000A6C02 /* Build configuration list for PBXNativeTarget "Algorithm-SwiftTests" */;
 			buildPhases = (
 				2E5E8A3B257CAE0C000A6C02 /* Sources */,
 				2E5E8A3C257CAE0C000A6C02 /* Frameworks */,
@@ -167,9 +167,9 @@
 			dependencies = (
 				2E5E8A45257CAE0C000A6C02 /* PBXTargetDependency */,
 			);
-			name = "LeetCode-SwiftTests";
-			productName = "LeetCode-SwiftTests";
-			productReference = 2E5E8A3F257CAE0C000A6C02 /* LeetCode-SwiftTests.xctest */;
+			name = "Algorithm-SwiftTests";
+			productName = "Algorithm-SwiftTests";
+			productReference = 2E5E8A3F257CAE0C000A6C02 /* Algorithm-SwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -179,7 +179,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = vhuichen;
 				TargetAttributes = {
 					2E5E89C4257CA505000A6C02 = {
@@ -191,7 +191,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2E5E89C0257CA505000A6C02 /* Build configuration list for PBXProject "LeetCode-Swift" */;
+			buildConfigurationList = 2E5E89C0257CA505000A6C02 /* Build configuration list for PBXProject "Algorithm-Swift" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -204,8 +204,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2E5E89C4257CA505000A6C02 /* LeetCode-Swift */,
-				2E5E8A3E257CAE0C000A6C02 /* LeetCode-SwiftTests */,
+				2E5E89C4257CA505000A6C02 /* Algorithm-Swift */,
+				2E5E8A3E257CAE0C000A6C02 /* Algorithm-SwiftTests */,
 			);
 		};
 /* End PBXProject section */
@@ -263,7 +263,7 @@
 /* Begin PBXTargetDependency section */
 		2E5E8A45257CAE0C000A6C02 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2E5E89C4257CA505000A6C02 /* LeetCode-Swift */;
+			target = 2E5E89C4257CA505000A6C02 /* Algorithm-Swift */;
 			targetProxy = 2E5E8A44257CAE0C000A6C02 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -306,6 +306,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -366,6 +367,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -400,12 +402,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97NU232GB7;
-				INFOPLIST_FILE = "LeetCode-Swift/Info.plist";
+				INFOPLIST_FILE = "Algorithm-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vhuichen.LeetCode-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vhuichen.Algorithm-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -418,12 +420,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97NU232GB7;
-				INFOPLIST_FILE = "LeetCode-Swift/Info.plist";
+				INFOPLIST_FILE = "Algorithm-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vhuichen.LeetCode-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vhuichen.Algorithm-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -436,17 +438,17 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97NU232GB7;
-				INFOPLIST_FILE = "LeetCode-SwiftTests/Info.plist";
+				INFOPLIST_FILE = "Algorithm-SwiftTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vhuichen.LeetCode-SwiftTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vhuichen.Algorithm-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeetCode-Swift.app/LeetCode-Swift";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Algorithm-Swift.app/Algorithm-Swift";
 			};
 			name = Debug;
 		};
@@ -456,24 +458,24 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97NU232GB7;
-				INFOPLIST_FILE = "LeetCode-SwiftTests/Info.plist";
+				INFOPLIST_FILE = "Algorithm-SwiftTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vhuichen.LeetCode-SwiftTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vhuichen.Algorithm-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeetCode-Swift.app/LeetCode-Swift";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Algorithm-Swift.app/Algorithm-Swift";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2E5E89C0257CA505000A6C02 /* Build configuration list for PBXProject "LeetCode-Swift" */ = {
+		2E5E89C0257CA505000A6C02 /* Build configuration list for PBXProject "Algorithm-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E5E89D7257CA508000A6C02 /* Debug */,
@@ -482,7 +484,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E5E89D9257CA508000A6C02 /* Build configuration list for PBXNativeTarget "LeetCode-Swift" */ = {
+		2E5E89D9257CA508000A6C02 /* Build configuration list for PBXNativeTarget "Algorithm-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E5E89DA257CA508000A6C02 /* Debug */,
@@ -491,7 +493,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E5E8A46257CAE0C000A6C02 /* Build configuration list for PBXNativeTarget "LeetCode-SwiftTests" */ = {
+		2E5E8A46257CAE0C000A6C02 /* Build configuration list for PBXNativeTarget "Algorithm-SwiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E5E8A47257CAE0C000A6C02 /* Debug */,

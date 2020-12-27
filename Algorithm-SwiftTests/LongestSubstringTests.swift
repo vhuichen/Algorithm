@@ -1,13 +1,13 @@
 //
 //  LongestSubstringTests.swift
-//  LeetCode-SwiftTests
+//  Algorithm-SwiftTests
 //
 //  Created by chenhui on 2020/12/11.
 //  Copyright © 2020 vhuichen. All rights reserved.
 //
 
 import XCTest
-@testable import LeetCode_Swift
+@testable import Algorithm_Swift
 
 class LongestSubstringTests: XCTestCase {
 

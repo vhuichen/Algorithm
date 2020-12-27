@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  LeetCode-Swift
+//  Algorithm-Swift
 //
 //  Created by chenhui on 2020/12/6.
 //  Copyright © 2020 vhuichen. All rights reserved.

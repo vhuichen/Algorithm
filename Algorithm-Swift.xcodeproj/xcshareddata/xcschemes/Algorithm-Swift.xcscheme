@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1140"
+   LastUpgradeVersion = "1220"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +15,23 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2E5E89C4257CA505000A6C02"
-               BuildableName = "LeetCode-Swift.app"
-               BlueprintName = "LeetCode-Swift"
-               ReferencedContainer = "container:LeetCode-Swift.xcodeproj">
+               BuildableName = "Algorithm-Swift.app"
+               BlueprintName = "Algorithm-Swift"
+               ReferencedContainer = "container:Algorithm-Swift.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2E5E8A3E257CAE0C000A6C02"
+               BuildableName = "Algorithm-SwiftTests.xctest"
+               BlueprintName = "Algorithm-SwiftTests"
+               ReferencedContainer = "container:Algorithm-Swift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,16 +42,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2E5E8A3E257CAE0C000A6C02"
-               BuildableName = "LeetCode-SwiftTests.xctest"
-               BlueprintName = "LeetCode-SwiftTests"
-               ReferencedContainer = "container:LeetCode-Swift.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -50,16 +54,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2E5E89C4257CA505000A6C02"
-            BuildableName = "LeetCode-Swift.app"
-            BlueprintName = "LeetCode-Swift"
-            ReferencedContainer = "container:LeetCode-Swift.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -67,16 +61,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2E5E89C4257CA505000A6C02"
-            BuildableName = "LeetCode-Swift.app"
-            BlueprintName = "LeetCode-Swift"
-            ReferencedContainer = "container:LeetCode-Swift.xcodeproj">
+            BuildableName = "Algorithm-Swift.app"
+            BlueprintName = "Algorithm-Swift"
+            ReferencedContainer = "container:Algorithm-Swift.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

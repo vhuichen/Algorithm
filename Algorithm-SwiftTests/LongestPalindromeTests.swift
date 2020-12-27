@@ -1,13 +1,13 @@
 //
 //  LongestPalindromeTests.swift
-//  LeetCode-SwiftTests
+//  Algorithm-SwiftTests
 //
 //  Created by chenhui on 2020/12/14.
 //  Copyright © 2020 vhuichen. All rights reserved.
 //
 
 import XCTest
-@testable import LeetCode_Swift
+@testable import Algorithm_Swift
 
 class LongestPalindromeTests: XCTestCase {
 
