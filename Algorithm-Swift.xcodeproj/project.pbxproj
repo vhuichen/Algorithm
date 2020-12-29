@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E59E0A3259AC62F00C32718 /* 6.ZigZagConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E59E0A2259AC62F00C32718 /* 6.ZigZagConversion.swift */; };
+		2E59E0AD259AC72F00C32718 /* 6.ZigZagConversionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E59E0AC259AC72F00C32718 /* 6.ZigZagConversionTests.swift */; };
 		2E5E89C9257CA506000A6C02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E89C8257CA506000A6C02 /* AppDelegate.swift */; };
 		2E5E89CB257CA506000A6C02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E89CA257CA506000A6C02 /* SceneDelegate.swift */; };
 		2E5E89CD257CA506000A6C02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E89CC257CA506000A6C02 /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E59E0A2259AC62F00C32718 /* 6.ZigZagConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 6.ZigZagConversion.swift; sourceTree = "<group>"; };
+		2E59E0AC259AC72F00C32718 /* 6.ZigZagConversionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 6.ZigZagConversionTests.swift; sourceTree = "<group>"; };
 		2E5E89C5257CA505000A6C02 /* Algorithm-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Algorithm-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E5E89C8257CA506000A6C02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E5E89CA257CA506000A6C02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 				2E8A18462582864C00662AE5 /* 3.LengthOfLongestSubstring.swift */,
 				2E8A18502585005A00662AE5 /* 4.FindMedianSortedArrays.swift */,
 				2EEA459C258703C60091EBD6 /* 5.LongestPalindrome.swift */,
+				2E59E0A2259AC62F00C32718 /* 6.ZigZagConversion.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 				2E8A183D258285AF00662AE5 /* 3.LongestSubstringTests.swift */,
 				2E8A18542585007000662AE5 /* 4.FindMedianSortedArraysTests.swift */,
 				2EEA45A0258703DC0091EBD6 /* 5.LongestPalindromeTests.swift */,
+				2E59E0AC259AC72F00C32718 /* 6.ZigZagConversionTests.swift */,
 			);
 			path = LeetCodeTests;
 			sourceTree = "<group>";
@@ -244,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E8A184B2582864C00662AE5 /* 2.AddTwoNumbers.swift in Sources */,
+				2E59E0A3259AC62F00C32718 /* 6.ZigZagConversion.swift in Sources */,
 				2EEA459D258703C60091EBD6 /* 5.LongestPalindrome.swift in Sources */,
 				2E5E89CD257CA506000A6C02 /* ViewController.swift in Sources */,
 				2E8A18492582864C00662AE5 /* 3.LengthOfLongestSubstring.swift in Sources */,
@@ -258,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E59E0AD259AC72F00C32718 /* 6.ZigZagConversionTests.swift in Sources */,
 				2E5E8A4A257CAE67000A6C02 /* 1.TwoSumTests.swift in Sources */,
 				2E9B6C5E257E0027005600ED /* 2.AddTwoNumbersTests.swift in Sources */,
 				2E8A183E258285AF00662AE5 /* 3.LongestSubstringTests.swift in Sources */,
