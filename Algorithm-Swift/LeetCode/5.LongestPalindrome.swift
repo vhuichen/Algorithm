@@ -19,12 +19,12 @@ extension Solution {
         var maxLocation = 0
         var maxLength = 1
         
-        var table = [[Bool]](repeating: [Bool](repeating: false, count: unicodeScalars.count), count: unicodeScalars.count)
+        var dp = [[Bool]](repeating: [Bool](repeating: false, count: unicodeScalars.count), count: unicodeScalars.count)
         
         for i in 0..<(unicodeScalars.count - 1) {
-            table[i][i] = true
+            dp[i][i] = true
             if unicodeScalars[i] == unicodeScalars[i + 1] {
-                table[i][i + 1] = true
+                dp[i][i + 1] = true
                 maxLocation = i
                 maxLength = 2
             }
@@ -34,8 +34,8 @@ extension Solution {
             for len in 3...unicodeScalars.count {
                 for left in 0...unicodeScalars.count - len {
                     let right = left + len - 1
-                    if unicodeScalars[left] == unicodeScalars[right] && table[left + 1][right - 1] {
-                        table[left][right] = true
+                    if unicodeScalars[left] == unicodeScalars[right] && dp[left + 1][right - 1] {
+                        dp[left][right] = true
                         maxLocation = left
                         maxLength = len
                     }

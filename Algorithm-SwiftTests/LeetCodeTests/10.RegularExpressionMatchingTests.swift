@@ -1,15 +1,15 @@
 //
-//  7.swift
+//  10.swift
 //  Algorithm-SwiftTests
 //
-//  Created by chenhui on 2020/12/29.
+//  Created by chenhui on 2020/12/31.
 //  Copyright © 2020 vhuichen. All rights reserved.
 //
 
 import XCTest
 @testable import Algorithm_Swift
 
-class ReverseIntegerTests: XCTestCase {
+class RegularExpressionMatchingTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -24,21 +24,15 @@ class ReverseIntegerTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
         let solution = Solution()
-        var result = solution.reverse(1)
-        XCTAssert(result == 1)
         
-        result = solution.reverse(12)
-        XCTAssert(result == 21)
-        
-        result = solution.reverse(123)
-        XCTAssert(result == 321)
-        
-        result = solution.reverse(12300000)
-        XCTAssert(result == 321)
-        
-        let intValue = 1534236469
-        result = solution.reverse(intValue)
-        XCTAssert(result == 0)
+        XCTAssert(solution.isMatch("", "") == true)
+        XCTAssert(solution.isMatch("", "a") == false)
+        XCTAssert(solution.isMatch("a", "") == false)
+        XCTAssert(solution.isMatch("aa", "a") == false)
+        XCTAssert(solution.isMatch("aa", "a*") == true)
+        XCTAssert(solution.isMatch("ab", ".*") == true)
+        XCTAssert(solution.isMatch("aab", "c*a*b") == true)
+        XCTAssert(solution.isMatch("mississippi", "mis*is*p*.") == false)
     }
 
     func testPerformanceExample() throws {
