@@ -10,6 +10,8 @@ import Foundation
 
 extension Solution {
     func isMatch(_ s: String, _ p: String) -> Bool {
+        
+        /* 方法一：动态规划 */
         //子函数
         @inline(__always)
         func isCharMatch(_ sArray: [Character], _ pArray: [Character], _ sLength: Int, _ pLength: Int) -> Bool {
@@ -38,9 +40,10 @@ extension Solution {
         for i in 0...sLength {
             for j in 1...pLength {
                 if pArray[j - 1] == "*" {
-                    dp[i][j] = dp[i][j - 2]
                     if isCharMatch(sArray, pArray, i, j - 1) {
-                        dp[i][j] = dp[i][j] || dp[i - 1][j]
+                        dp[i][j] = dp[i][j - 2] || dp[i - 1][j]
+                    } else {
+                        dp[i][j] = dp[i][j - 2]
                     }
                 } else if isCharMatch(sArray, pArray, i, j) {
                     dp[i][j] = dp[i - 1][j - 1]
@@ -49,5 +52,38 @@ extension Solution {
         }
         
         return dp[sArray.count][pArray.count]
+        
+        
+        /*
+        /* 方法二：递归 */
+        @inline(__always)
+        func isHeadMatch(_ sArray: [Character], _ pArray: [Character], _ sLength: Int, _ pLength: Int) -> Bool {
+            guard sLength < sArray.count else {
+                return false
+            }
+            return (sArray[sLength] == pArray[pLength]) || (pArray[pLength] == ".")
+        }
+        
+        func isMatch(_ sArray: [Character], _ pArray: [Character], _ sLength: Int, _ pLength: Int) -> Bool {
+            if pLength == pArray.count {
+                return sLength == sArray.count;
+            }
+            
+            if pArray.count - pLength > 1 && pArray[pLength + 1] == "*"  {
+                if sLength < sArray.count && isHeadMatch(sArray, pArray, sLength, pLength) {
+                    return isMatch(sArray, pArray, sLength, pLength + 2)
+                        || isMatch(sArray, pArray, sLength + 1, pLength)
+                } else {
+                    return isMatch(sArray, pArray, sLength, pLength + 2)
+                }
+            } else if isHeadMatch(sArray, pArray, sLength, pLength) {
+                return isMatch(sArray, pArray, sLength + 1, pLength + 1)
+            }
+            
+            return false
+        }
+        
+        return isMatch(Array(s), Array(p), 0, 0)
+        */
     }
 }
