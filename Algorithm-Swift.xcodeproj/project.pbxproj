@@ -26,6 +26,8 @@
 		2E8673D4259D722100ACE7E4 /* 10.RegularExpressionMatchingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8673D3259D722100ACE7E4 /* 10.RegularExpressionMatchingTests.swift */; };
 		2E87130D25A2AEC50002A851 /* 12.IntegerToRoman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E87130C25A2AEC50002A851 /* 12.IntegerToRoman.swift */; };
 		2E87131125A2AED30002A851 /* 12.IntegerToRomanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E87131025A2AED30002A851 /* 12.IntegerToRomanTests.swift */; };
+		2E87131925A2E8260002A851 /* 13.RomanToInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E87131825A2E8260002A851 /* 13.RomanToInteger.swift */; };
+		2E87131D25A2E83A0002A851 /* 13.RomanToIntegerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E87131C25A2E83A0002A851 /* 13.RomanToIntegerTests.swift */; };
 		2E8A183E258285AF00662AE5 /* 3.LongestSubstringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A183D258285AF00662AE5 /* 3.LongestSubstringTests.swift */; };
 		2E8A18492582864C00662AE5 /* 3.LengthOfLongestSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A18462582864C00662AE5 /* 3.LengthOfLongestSubstring.swift */; };
 		2E8A184A2582864C00662AE5 /* 1.TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A18472582864C00662AE5 /* 1.TwoSum.swift */; };
@@ -73,6 +75,8 @@
 		2E8673D3259D722100ACE7E4 /* 10.RegularExpressionMatchingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10.RegularExpressionMatchingTests.swift; sourceTree = "<group>"; };
 		2E87130C25A2AEC50002A851 /* 12.IntegerToRoman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 12.IntegerToRoman.swift; sourceTree = "<group>"; };
 		2E87131025A2AED30002A851 /* 12.IntegerToRomanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 12.IntegerToRomanTests.swift; sourceTree = "<group>"; };
+		2E87131825A2E8260002A851 /* 13.RomanToInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 13.RomanToInteger.swift; sourceTree = "<group>"; };
+		2E87131C25A2E83A0002A851 /* 13.RomanToIntegerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 13.RomanToIntegerTests.swift; sourceTree = "<group>"; };
 		2E8A183D258285AF00662AE5 /* 3.LongestSubstringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3.LongestSubstringTests.swift; sourceTree = "<group>"; };
 		2E8A18462582864C00662AE5 /* 3.LengthOfLongestSubstring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 3.LengthOfLongestSubstring.swift; sourceTree = "<group>"; };
 		2E8A18472582864C00662AE5 /* 1.TwoSum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 1.TwoSum.swift; sourceTree = "<group>"; };
@@ -161,6 +165,7 @@
 				2E8673CF259D720500ACE7E4 /* 10.RegularExpressionMatching.swift */,
 				2E8A188525A211E300662AE5 /* 11.ContainerWithMostWater.swift */,
 				2E87130C25A2AEC50002A851 /* 12.IntegerToRoman.swift */,
+				2E87131825A2E8260002A851 /* 13.RomanToInteger.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 				2E8673D3259D722100ACE7E4 /* 10.RegularExpressionMatchingTests.swift */,
 				2E8A188925A211F500662AE5 /* 11.ContainerWithMostWaterTests.swift */,
 				2E87131025A2AED30002A851 /* 12.IntegerToRomanTests.swift */,
+				2E87131C25A2E83A0002A851 /* 13.RomanToIntegerTests.swift */,
 			);
 			path = LeetCodeTests;
 			sourceTree = "<group>";
@@ -287,6 +293,7 @@
 			files = (
 				2E8A184B2582864C00662AE5 /* 2.AddTwoNumbers.swift in Sources */,
 				2E59E0A3259AC62F00C32718 /* 6.ZigZagConversion.swift in Sources */,
+				2E87131925A2E8260002A851 /* 13.RomanToInteger.swift in Sources */,
 				2E8673D0259D720500ACE7E4 /* 10.RegularExpressionMatching.swift in Sources */,
 				2E59E35B259B359A00C32718 /* 8.StringToInteger(atoi).swift in Sources */,
 				2EEA459D258703C60091EBD6 /* 5.LongestPalindrome.swift in Sources */,
@@ -312,6 +319,7 @@
 				2E87131125A2AED30002A851 /* 12.IntegerToRomanTests.swift in Sources */,
 				2E8A188A25A211F500662AE5 /* 11.ContainerWithMostWaterTests.swift in Sources */,
 				2E5E8A4A257CAE67000A6C02 /* 1.TwoSumTests.swift in Sources */,
+				2E87131D25A2E83A0002A851 /* 13.RomanToIntegerTests.swift in Sources */,
 				2E9B6C5E257E0027005600ED /* 2.AddTwoNumbersTests.swift in Sources */,
 				2E8A183E258285AF00662AE5 /* 3.LongestSubstringTests.swift in Sources */,
 				2E59E35F259B35AF00C32718 /* 8.StringToInteger(atoi)Tests.swift in Sources */,
