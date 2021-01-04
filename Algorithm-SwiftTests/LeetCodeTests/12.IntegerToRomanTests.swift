@@ -1,16 +1,16 @@
 //
-//  11.swift
+//  12.swift
 //  Algorithm-SwiftTests
 //
-//  Created by chenhui on 2021/1/3.
+//  Created by chenhui on 2021/1/4.
 //  Copyright © 2021 vhuichen. All rights reserved.
 //
 
 import XCTest
 @testable import Algorithm_Swift
 
-class ContainerWithMostWaterTests: XCTestCase {
-    
+class IntegerToRomanTests: XCTestCase {
+
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -25,17 +25,11 @@ class ContainerWithMostWaterTests: XCTestCase {
         
         let solution = Solution()
         
-        var heights = [1,1]
-        assert(solution.maxArea(heights) == 1)
-            
-        heights = [1,8,6,2,5,4,8,3,7]
-        assert(solution.maxArea(heights) == 49)
-        
-        heights = [1,2,1]
-        assert(solution.maxArea(heights) == 2)
-        
-        heights = [1]
-        assert(solution.maxArea(heights) == 0)
+        assert(solution.intToRoman(3) == "III")
+        assert(solution.intToRoman(4) == "IV")
+        assert(solution.intToRoman(9) == "IX")
+        assert(solution.intToRoman(58) == "LVIII")
+        assert(solution.intToRoman(1994) == "MCMXCIV")
     }
 
     func testPerformanceExample() throws {
