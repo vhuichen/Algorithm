@@ -36,6 +36,8 @@
 		2E8A18552585007000662AE5 /* 4.FindMedianSortedArraysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A18542585007000662AE5 /* 4.FindMedianSortedArraysTests.swift */; };
 		2E8A188625A211E300662AE5 /* 11.ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A188525A211E300662AE5 /* 11.ContainerWithMostWater.swift */; };
 		2E8A188A25A211F500662AE5 /* 11.ContainerWithMostWaterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A188925A211F500662AE5 /* 11.ContainerWithMostWaterTests.swift */; };
+		2E8A189625A3513D00662AE5 /* 14.LongestCommonPrefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A189525A3513D00662AE5 /* 14.LongestCommonPrefix.swift */; };
+		2E8A189A25A3515300662AE5 /* 14.LongestCommonPrefixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A189925A3515300662AE5 /* 14.LongestCommonPrefixTests.swift */; };
 		2E9B6C5E257E0027005600ED /* 2.AddTwoNumbersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9B6C5D257E0027005600ED /* 2.AddTwoNumbersTests.swift */; };
 		2EEA459D258703C60091EBD6 /* 5.LongestPalindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEA459C258703C60091EBD6 /* 5.LongestPalindrome.swift */; };
 		2EEA45A1258703DC0091EBD6 /* 5.LongestPalindromeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEA45A0258703DC0091EBD6 /* 5.LongestPalindromeTests.swift */; };
@@ -85,6 +87,8 @@
 		2E8A18542585007000662AE5 /* 4.FindMedianSortedArraysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4.FindMedianSortedArraysTests.swift; sourceTree = "<group>"; };
 		2E8A188525A211E300662AE5 /* 11.ContainerWithMostWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11.ContainerWithMostWater.swift; sourceTree = "<group>"; };
 		2E8A188925A211F500662AE5 /* 11.ContainerWithMostWaterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11.ContainerWithMostWaterTests.swift; sourceTree = "<group>"; };
+		2E8A189525A3513D00662AE5 /* 14.LongestCommonPrefix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 14.LongestCommonPrefix.swift; sourceTree = "<group>"; };
+		2E8A189925A3515300662AE5 /* 14.LongestCommonPrefixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 14.LongestCommonPrefixTests.swift; sourceTree = "<group>"; };
 		2E9B6C5D257E0027005600ED /* 2.AddTwoNumbersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2.AddTwoNumbersTests.swift; sourceTree = "<group>"; };
 		2EEA459C258703C60091EBD6 /* 5.LongestPalindrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 5.LongestPalindrome.swift; sourceTree = "<group>"; };
 		2EEA45A0258703DC0091EBD6 /* 5.LongestPalindromeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 5.LongestPalindromeTests.swift; sourceTree = "<group>"; };
@@ -166,6 +170,7 @@
 				2E8A188525A211E300662AE5 /* 11.ContainerWithMostWater.swift */,
 				2E87130C25A2AEC50002A851 /* 12.IntegerToRoman.swift */,
 				2E87131825A2E8260002A851 /* 13.RomanToInteger.swift */,
+				2E8A189525A3513D00662AE5 /* 14.LongestCommonPrefix.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 				2E8A188925A211F500662AE5 /* 11.ContainerWithMostWaterTests.swift */,
 				2E87131025A2AED30002A851 /* 12.IntegerToRomanTests.swift */,
 				2E87131C25A2E83A0002A851 /* 13.RomanToIntegerTests.swift */,
+				2E8A189925A3515300662AE5 /* 14.LongestCommonPrefixTests.swift */,
 			);
 			path = LeetCodeTests;
 			sourceTree = "<group>";
@@ -305,6 +311,7 @@
 				2E5E89C9257CA506000A6C02 /* AppDelegate.swift in Sources */,
 				2E8A184A2582864C00662AE5 /* 1.TwoSum.swift in Sources */,
 				2E8673C0259D65E000ACE7E4 /* 9.PalindromeNumber.swift in Sources */,
+				2E8A189625A3513D00662AE5 /* 14.LongestCommonPrefix.swift in Sources */,
 				2E5E89CB257CA506000A6C02 /* SceneDelegate.swift in Sources */,
 				2E8A188625A211E300662AE5 /* 11.ContainerWithMostWater.swift in Sources */,
 			);
@@ -326,6 +333,7 @@
 				2E59E353259B1CC900C32718 /* 7.ReverseIntegerTests.swift in Sources */,
 				2EEA45A1258703DC0091EBD6 /* 5.LongestPalindromeTests.swift in Sources */,
 				2E8673D4259D722100ACE7E4 /* 10.RegularExpressionMatchingTests.swift in Sources */,
+				2E8A189A25A3515300662AE5 /* 14.LongestCommonPrefixTests.swift in Sources */,
 				2E8A18552585007000662AE5 /* 4.FindMedianSortedArraysTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
