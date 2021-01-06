@@ -20,6 +20,10 @@
 		2E5E89D5257CA508000A6C02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E89D3257CA508000A6C02 /* LaunchScreen.storyboard */; };
 		2E5E8A4A257CAE67000A6C02 /* 1.TwoSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E8A49257CAE67000A6C02 /* 1.TwoSumTests.swift */; };
 		2E5E8A4C257CD351000A6C02 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E8A4B257CD351000A6C02 /* README.md */; };
+		2E66D22625A550BE0085C100 /* 16.3SumClosest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E66D22525A550BE0085C100 /* 16.3SumClosest.swift */; };
+		2E66D22A25A550D50085C100 /* 16.3SumClosestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E66D22925A550D50085C100 /* 16.3SumClosestTests.swift */; };
+		2E66D37E25A5BD3E0085C100 /* 18.4Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E66D37D25A5BD3E0085C100 /* 18.4Sum.swift */; };
+		2E66D38225A5BD540085C100 /* 18.4SumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E66D38125A5BD540085C100 /* 18.4SumTests.swift */; };
 		2E8673C0259D65E000ACE7E4 /* 9.PalindromeNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8673BF259D65E000ACE7E4 /* 9.PalindromeNumber.swift */; };
 		2E8673CA259D65FF00ACE7E4 /* 9.PalindromeNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8673C9259D65FF00ACE7E4 /* 9.PalindromeNumberTests.swift */; };
 		2E8673D0259D720500ACE7E4 /* 10.RegularExpressionMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8673CF259D720500ACE7E4 /* 10.RegularExpressionMatching.swift */; };
@@ -73,6 +77,10 @@
 		2E5E8A43257CAE0C000A6C02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E5E8A49257CAE67000A6C02 /* 1.TwoSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1.TwoSumTests.swift; sourceTree = "<group>"; };
 		2E5E8A4B257CD351000A6C02 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		2E66D22525A550BE0085C100 /* 16.3SumClosest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 16.3SumClosest.swift; sourceTree = "<group>"; };
+		2E66D22925A550D50085C100 /* 16.3SumClosestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 16.3SumClosestTests.swift; sourceTree = "<group>"; };
+		2E66D37D25A5BD3E0085C100 /* 18.4Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 18.4Sum.swift; sourceTree = "<group>"; };
+		2E66D38125A5BD540085C100 /* 18.4SumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 18.4SumTests.swift; sourceTree = "<group>"; };
 		2E8673BF259D65E000ACE7E4 /* 9.PalindromeNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9.PalindromeNumber.swift; sourceTree = "<group>"; };
 		2E8673C9259D65FF00ACE7E4 /* 9.PalindromeNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9.PalindromeNumberTests.swift; sourceTree = "<group>"; };
 		2E8673CF259D720500ACE7E4 /* 10.RegularExpressionMatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10.RegularExpressionMatching.swift; sourceTree = "<group>"; };
@@ -176,6 +184,8 @@
 				2E87131825A2E8260002A851 /* 13.RomanToInteger.swift */,
 				2E8A189525A3513D00662AE5 /* 14.LongestCommonPrefix.swift */,
 				2E8A18A125A4C33100662AE5 /* 15.3Sum.swift */,
+				2E66D22525A550BE0085C100 /* 16.3SumClosest.swift */,
+				2E66D37D25A5BD3E0085C100 /* 18.4Sum.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -198,6 +208,8 @@
 				2E87131C25A2E83A0002A851 /* 13.RomanToIntegerTests.swift */,
 				2E8A189925A3515300662AE5 /* 14.LongestCommonPrefixTests.swift */,
 				2E8A18A525A4C3D500662AE5 /* 15.3SumTests.swift */,
+				2E66D22925A550D50085C100 /* 16.3SumClosestTests.swift */,
+				2E66D38125A5BD540085C100 /* 18.4SumTests.swift */,
 			);
 			path = LeetCodeTests;
 			sourceTree = "<group>";
@@ -312,12 +324,14 @@
 				2E5E89CD257CA506000A6C02 /* ViewController.swift in Sources */,
 				2E87130D25A2AEC50002A851 /* 12.IntegerToRoman.swift in Sources */,
 				2E8A18492582864C00662AE5 /* 3.LengthOfLongestSubstring.swift in Sources */,
+				2E66D22625A550BE0085C100 /* 16.3SumClosest.swift in Sources */,
 				2E8A18512585005A00662AE5 /* 4.FindMedianSortedArrays.swift in Sources */,
 				2E59E34F259B1C6700C32718 /* 7.ReverseInteger.swift in Sources */,
 				2E5E89C9257CA506000A6C02 /* AppDelegate.swift in Sources */,
 				2E8A184A2582864C00662AE5 /* 1.TwoSum.swift in Sources */,
 				2E8673C0259D65E000ACE7E4 /* 9.PalindromeNumber.swift in Sources */,
 				2E8A18A225A4C33100662AE5 /* 15.3Sum.swift in Sources */,
+				2E66D37E25A5BD3E0085C100 /* 18.4Sum.swift in Sources */,
 				2E8A189625A3513D00662AE5 /* 14.LongestCommonPrefix.swift in Sources */,
 				2E5E89CB257CA506000A6C02 /* SceneDelegate.swift in Sources */,
 				2E8A188625A211E300662AE5 /* 11.ContainerWithMostWater.swift in Sources */,
@@ -330,6 +344,7 @@
 			files = (
 				2E8673CA259D65FF00ACE7E4 /* 9.PalindromeNumberTests.swift in Sources */,
 				2E59E0AD259AC72F00C32718 /* 6.ZigZagConversionTests.swift in Sources */,
+				2E66D38225A5BD540085C100 /* 18.4SumTests.swift in Sources */,
 				2E87131125A2AED30002A851 /* 12.IntegerToRomanTests.swift in Sources */,
 				2E8A188A25A211F500662AE5 /* 11.ContainerWithMostWaterTests.swift in Sources */,
 				2E5E8A4A257CAE67000A6C02 /* 1.TwoSumTests.swift in Sources */,
@@ -338,6 +353,7 @@
 				2E8A183E258285AF00662AE5 /* 3.LongestSubstringTests.swift in Sources */,
 				2E8A18A625A4C3D500662AE5 /* 15.3SumTests.swift in Sources */,
 				2E59E35F259B35AF00C32718 /* 8.StringToInteger(atoi)Tests.swift in Sources */,
+				2E66D22A25A550D50085C100 /* 16.3SumClosestTests.swift in Sources */,
 				2E59E353259B1CC900C32718 /* 7.ReverseIntegerTests.swift in Sources */,
 				2EEA45A1258703DC0091EBD6 /* 5.LongestPalindromeTests.swift in Sources */,
 				2E8673D4259D722100ACE7E4 /* 10.RegularExpressionMatchingTests.swift in Sources */,
