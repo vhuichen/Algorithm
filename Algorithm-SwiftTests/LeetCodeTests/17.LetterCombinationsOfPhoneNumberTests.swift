@@ -24,8 +24,8 @@ class LetterCombinationsOfPhoneNumberTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
         let solution = Solution()
-        XCTAssert(solution.letterCombinations("23") == ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"])
-        
+        let s = solution.letterCombinations("23")
+        XCTAssert(s == ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"])
     }
 
     func testPerformanceExample() throws {
