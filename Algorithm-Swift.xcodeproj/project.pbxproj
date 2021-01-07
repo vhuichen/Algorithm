@@ -32,6 +32,8 @@
 		2E87131125A2AED30002A851 /* 12.IntegerToRomanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E87131025A2AED30002A851 /* 12.IntegerToRomanTests.swift */; };
 		2E87131925A2E8260002A851 /* 13.RomanToInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E87131825A2E8260002A851 /* 13.RomanToInteger.swift */; };
 		2E87131D25A2E83A0002A851 /* 13.RomanToIntegerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E87131C25A2E83A0002A851 /* 13.RomanToIntegerTests.swift */; };
+		2E88C11425A7177D007CD62B /* 17.LetterCombinationsOfPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E88C11325A7177D007CD62B /* 17.LetterCombinationsOfPhoneNumber.swift */; };
+		2E88C11825A71791007CD62B /* 17.LetterCombinationsOfPhoneNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E88C11725A71791007CD62B /* 17.LetterCombinationsOfPhoneNumberTests.swift */; };
 		2E8A183E258285AF00662AE5 /* 3.LongestSubstringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A183D258285AF00662AE5 /* 3.LongestSubstringTests.swift */; };
 		2E8A18492582864C00662AE5 /* 3.LengthOfLongestSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A18462582864C00662AE5 /* 3.LengthOfLongestSubstring.swift */; };
 		2E8A184A2582864C00662AE5 /* 1.TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A18472582864C00662AE5 /* 1.TwoSum.swift */; };
@@ -89,6 +91,8 @@
 		2E87131025A2AED30002A851 /* 12.IntegerToRomanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 12.IntegerToRomanTests.swift; sourceTree = "<group>"; };
 		2E87131825A2E8260002A851 /* 13.RomanToInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 13.RomanToInteger.swift; sourceTree = "<group>"; };
 		2E87131C25A2E83A0002A851 /* 13.RomanToIntegerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 13.RomanToIntegerTests.swift; sourceTree = "<group>"; };
+		2E88C11325A7177D007CD62B /* 17.LetterCombinationsOfPhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 17.LetterCombinationsOfPhoneNumber.swift; sourceTree = "<group>"; };
+		2E88C11725A71791007CD62B /* 17.LetterCombinationsOfPhoneNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 17.LetterCombinationsOfPhoneNumberTests.swift; sourceTree = "<group>"; };
 		2E8A183D258285AF00662AE5 /* 3.LongestSubstringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3.LongestSubstringTests.swift; sourceTree = "<group>"; };
 		2E8A18462582864C00662AE5 /* 3.LengthOfLongestSubstring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 3.LengthOfLongestSubstring.swift; sourceTree = "<group>"; };
 		2E8A18472582864C00662AE5 /* 1.TwoSum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 1.TwoSum.swift; sourceTree = "<group>"; };
@@ -185,6 +189,7 @@
 				2E8A189525A3513D00662AE5 /* 14.LongestCommonPrefix.swift */,
 				2E8A18A125A4C33100662AE5 /* 15.3Sum.swift */,
 				2E66D22525A550BE0085C100 /* 16.3SumClosest.swift */,
+				2E88C11325A7177D007CD62B /* 17.LetterCombinationsOfPhoneNumber.swift */,
 				2E66D37D25A5BD3E0085C100 /* 18.4Sum.swift */,
 			);
 			path = LeetCode;
@@ -209,6 +214,7 @@
 				2E8A189925A3515300662AE5 /* 14.LongestCommonPrefixTests.swift */,
 				2E8A18A525A4C3D500662AE5 /* 15.3SumTests.swift */,
 				2E66D22925A550D50085C100 /* 16.3SumClosestTests.swift */,
+				2E88C11725A71791007CD62B /* 17.LetterCombinationsOfPhoneNumberTests.swift */,
 				2E66D38125A5BD540085C100 /* 18.4SumTests.swift */,
 			);
 			path = LeetCodeTests;
@@ -328,6 +334,7 @@
 				2E8A18512585005A00662AE5 /* 4.FindMedianSortedArrays.swift in Sources */,
 				2E59E34F259B1C6700C32718 /* 7.ReverseInteger.swift in Sources */,
 				2E5E89C9257CA506000A6C02 /* AppDelegate.swift in Sources */,
+				2E88C11425A7177D007CD62B /* 17.LetterCombinationsOfPhoneNumber.swift in Sources */,
 				2E8A184A2582864C00662AE5 /* 1.TwoSum.swift in Sources */,
 				2E8673C0259D65E000ACE7E4 /* 9.PalindromeNumber.swift in Sources */,
 				2E8A18A225A4C33100662AE5 /* 15.3Sum.swift in Sources */,
@@ -353,6 +360,7 @@
 				2E8A183E258285AF00662AE5 /* 3.LongestSubstringTests.swift in Sources */,
 				2E8A18A625A4C3D500662AE5 /* 15.3SumTests.swift in Sources */,
 				2E59E35F259B35AF00C32718 /* 8.StringToInteger(atoi)Tests.swift in Sources */,
+				2E88C11825A71791007CD62B /* 17.LetterCombinationsOfPhoneNumberTests.swift in Sources */,
 				2E66D22A25A550D50085C100 /* 16.3SumClosestTests.swift in Sources */,
 				2E59E353259B1CC900C32718 /* 7.ReverseIntegerTests.swift in Sources */,
 				2EEA45A1258703DC0091EBD6 /* 5.LongestPalindromeTests.swift in Sources */,
