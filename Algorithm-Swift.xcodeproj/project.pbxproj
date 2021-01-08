@@ -52,6 +52,8 @@
 		2E8A18A625A4C3D500662AE5 /* 15.3SumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A18A525A4C3D500662AE5 /* 15.3SumTests.swift */; };
 		2E8A18AE25A7748A00662AE5 /* 19.RemoveNthNodeFromEndOfList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A18AD25A7748A00662AE5 /* 19.RemoveNthNodeFromEndOfList.swift */; };
 		2E8A18B225A7749A00662AE5 /* 19.RemoveNthNodeFromEndOfListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A18B125A7749A00662AE5 /* 19.RemoveNthNodeFromEndOfListTests.swift */; };
+		2E8A18BA25A8BC8900662AE5 /* 22.GenerateParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A18B925A8BC8900662AE5 /* 22.GenerateParentheses.swift */; };
+		2E8A18BE25A8BCBE00662AE5 /* 22.GenerateParenthesesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A18BD25A8BCBE00662AE5 /* 22.GenerateParenthesesTests.swift */; };
 		2E9B6C5E257E0027005600ED /* 2.AddTwoNumbersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9B6C5D257E0027005600ED /* 2.AddTwoNumbersTests.swift */; };
 		2EEA459D258703C60091EBD6 /* 5.LongestPalindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEA459C258703C60091EBD6 /* 5.LongestPalindrome.swift */; };
 		2EEA45A1258703DC0091EBD6 /* 5.LongestPalindromeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEA45A0258703DC0091EBD6 /* 5.LongestPalindromeTests.swift */; };
@@ -117,6 +119,8 @@
 		2E8A18A525A4C3D500662AE5 /* 15.3SumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 15.3SumTests.swift; sourceTree = "<group>"; };
 		2E8A18AD25A7748A00662AE5 /* 19.RemoveNthNodeFromEndOfList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 19.RemoveNthNodeFromEndOfList.swift; sourceTree = "<group>"; };
 		2E8A18B125A7749A00662AE5 /* 19.RemoveNthNodeFromEndOfListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 19.RemoveNthNodeFromEndOfListTests.swift; sourceTree = "<group>"; };
+		2E8A18B925A8BC8900662AE5 /* 22.GenerateParentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 22.GenerateParentheses.swift; sourceTree = "<group>"; };
+		2E8A18BD25A8BCBE00662AE5 /* 22.GenerateParenthesesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 22.GenerateParenthesesTests.swift; sourceTree = "<group>"; };
 		2E9B6C5D257E0027005600ED /* 2.AddTwoNumbersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2.AddTwoNumbersTests.swift; sourceTree = "<group>"; };
 		2EEA459C258703C60091EBD6 /* 5.LongestPalindrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 5.LongestPalindrome.swift; sourceTree = "<group>"; };
 		2EEA45A0258703DC0091EBD6 /* 5.LongestPalindromeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 5.LongestPalindromeTests.swift; sourceTree = "<group>"; };
@@ -206,6 +210,7 @@
 				2E8A18AD25A7748A00662AE5 /* 19.RemoveNthNodeFromEndOfList.swift */,
 				2E5A4B7C25A7F2FB00334ECF /* 20.ValidParentheses.swift */,
 				2E5A4CD925A8201900334ECF /* 21.MergeTwoSortedLists.swift */,
+				2E8A18B925A8BC8900662AE5 /* 22.GenerateParentheses.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 				2E8A18B125A7749A00662AE5 /* 19.RemoveNthNodeFromEndOfListTests.swift */,
 				2E5A4B8025A7F30A00334ECF /* 20.ValidParenthesesTests.swift */,
 				2E5A4CDD25A8202700334ECF /* 21.MergeTwoSortedListsTests.swift */,
+				2E8A18BD25A8BCBE00662AE5 /* 22.GenerateParenthesesTests.swift */,
 			);
 			path = LeetCodeTests;
 			sourceTree = "<group>";
@@ -362,6 +368,7 @@
 				2E66D37E25A5BD3E0085C100 /* 18.4Sum.swift in Sources */,
 				2E8A189625A3513D00662AE5 /* 14.LongestCommonPrefix.swift in Sources */,
 				2E5E89CB257CA506000A6C02 /* SceneDelegate.swift in Sources */,
+				2E8A18BA25A8BC8900662AE5 /* 22.GenerateParentheses.swift in Sources */,
 				2E8A188625A211E300662AE5 /* 11.ContainerWithMostWater.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E8673CA259D65FF00ACE7E4 /* 9.PalindromeNumberTests.swift in Sources */,
+				2E8A18BE25A8BCBE00662AE5 /* 22.GenerateParenthesesTests.swift in Sources */,
 				2E59E0AD259AC72F00C32718 /* 6.ZigZagConversionTests.swift in Sources */,
 				2E5A4CDE25A8202700334ECF /* 21.MergeTwoSortedListsTests.swift in Sources */,
 				2E66D38225A5BD540085C100 /* 18.4SumTests.swift in Sources */,

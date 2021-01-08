@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         
     }
 }
-//19.RemoveNthNodeFromEndOfList
+
 extension Solution {
     
 }
