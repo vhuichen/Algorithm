@@ -15,6 +15,8 @@
 		2E59E35F259B35AF00C32718 /* 8.StringToInteger(atoi)Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E59E35E259B35AF00C32718 /* 8.StringToInteger(atoi)Tests.swift */; };
 		2E5A4B7D25A7F2FB00334ECF /* 20.ValidParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5A4B7C25A7F2FB00334ECF /* 20.ValidParentheses.swift */; };
 		2E5A4B8125A7F30A00334ECF /* 20.ValidParenthesesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5A4B8025A7F30A00334ECF /* 20.ValidParenthesesTests.swift */; };
+		2E5A4CDA25A8201900334ECF /* 21.MergeTwoSortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5A4CD925A8201900334ECF /* 21.MergeTwoSortedLists.swift */; };
+		2E5A4CDE25A8202700334ECF /* 21.MergeTwoSortedListsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5A4CDD25A8202700334ECF /* 21.MergeTwoSortedListsTests.swift */; };
 		2E5E89C9257CA506000A6C02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E89C8257CA506000A6C02 /* AppDelegate.swift */; };
 		2E5E89CB257CA506000A6C02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E89CA257CA506000A6C02 /* SceneDelegate.swift */; };
 		2E5E89CD257CA506000A6C02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E89CC257CA506000A6C02 /* ViewController.swift */; };
@@ -74,6 +76,8 @@
 		2E59E35E259B35AF00C32718 /* 8.StringToInteger(atoi)Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "8.StringToInteger(atoi)Tests.swift"; sourceTree = "<group>"; };
 		2E5A4B7C25A7F2FB00334ECF /* 20.ValidParentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20.ValidParentheses.swift; sourceTree = "<group>"; };
 		2E5A4B8025A7F30A00334ECF /* 20.ValidParenthesesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 20.ValidParenthesesTests.swift; sourceTree = "<group>"; };
+		2E5A4CD925A8201900334ECF /* 21.MergeTwoSortedLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 21.MergeTwoSortedLists.swift; sourceTree = "<group>"; };
+		2E5A4CDD25A8202700334ECF /* 21.MergeTwoSortedListsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 21.MergeTwoSortedListsTests.swift; sourceTree = "<group>"; };
 		2E5E89C5257CA505000A6C02 /* Algorithm-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Algorithm-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E5E89C8257CA506000A6C02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E5E89CA257CA506000A6C02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -201,6 +205,7 @@
 				2E66D37D25A5BD3E0085C100 /* 18.4Sum.swift */,
 				2E8A18AD25A7748A00662AE5 /* 19.RemoveNthNodeFromEndOfList.swift */,
 				2E5A4B7C25A7F2FB00334ECF /* 20.ValidParentheses.swift */,
+				2E5A4CD925A8201900334ECF /* 21.MergeTwoSortedLists.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 				2E66D38125A5BD540085C100 /* 18.4SumTests.swift */,
 				2E8A18B125A7749A00662AE5 /* 19.RemoveNthNodeFromEndOfListTests.swift */,
 				2E5A4B8025A7F30A00334ECF /* 20.ValidParenthesesTests.swift */,
+				2E5A4CDD25A8202700334ECF /* 21.MergeTwoSortedListsTests.swift */,
 			);
 			path = LeetCodeTests;
 			sourceTree = "<group>";
@@ -343,6 +349,7 @@
 				2E5E89CD257CA506000A6C02 /* ViewController.swift in Sources */,
 				2E87130D25A2AEC50002A851 /* 12.IntegerToRoman.swift in Sources */,
 				2E8A18492582864C00662AE5 /* 3.LengthOfLongestSubstring.swift in Sources */,
+				2E5A4CDA25A8201900334ECF /* 21.MergeTwoSortedLists.swift in Sources */,
 				2E66D22625A550BE0085C100 /* 16.3SumClosest.swift in Sources */,
 				2E5A4B7D25A7F2FB00334ECF /* 20.ValidParentheses.swift in Sources */,
 				2E8A18512585005A00662AE5 /* 4.FindMedianSortedArrays.swift in Sources */,
@@ -365,6 +372,7 @@
 			files = (
 				2E8673CA259D65FF00ACE7E4 /* 9.PalindromeNumberTests.swift in Sources */,
 				2E59E0AD259AC72F00C32718 /* 6.ZigZagConversionTests.swift in Sources */,
+				2E5A4CDE25A8202700334ECF /* 21.MergeTwoSortedListsTests.swift in Sources */,
 				2E66D38225A5BD540085C100 /* 18.4SumTests.swift in Sources */,
 				2E87131125A2AED30002A851 /* 12.IntegerToRomanTests.swift in Sources */,
 				2E8A188A25A211F500662AE5 /* 11.ContainerWithMostWaterTests.swift in Sources */,
