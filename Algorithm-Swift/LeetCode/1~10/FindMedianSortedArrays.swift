@@ -16,10 +16,10 @@ extension Solution {
      
      方法一：两个数组分别双指针，每次将头尾最小、最大的数字去掉，等剩下一个或者两个数据时就可以得到中位数
      方法二：二分查找，当其中一个数组的中位数确定时，另一个数组的中位数也就确定了
-     方法三：方法一的简化版，线性查找，只需要定位一边的个数就行了
+     方法三：方法一的简化版，迭代查找，只需要定位一边的个数就行了
      */
     func findMedianSortedArrays(_ nums1: [Int], _ nums2: [Int]) -> Double {
-        /* 方法三：线性查找，简单易理解 */
+        /* 方法三：迭代查找，简单易理解 */
         /*
         let count = nums1.count + nums2.count
         let isEvenNumber = count % 2 == 0
