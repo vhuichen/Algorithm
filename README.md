@@ -1,7 +1,7 @@
 # Algorithm-Swift
 Swift编写 ，XCTest单元测试   
 
-LeetCode 已完成 ：22
+LeetCode 已完成至：23
 
 ## 🏷标签
 
@@ -51,6 +51,12 @@ LeetCode 已完成 ：22
 20
 
 ### 分治
+23
+
+### 堆
+23
+
+### 优先级队列
 23
 
 ### 其他

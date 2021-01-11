@@ -20,109 +20,63 @@ class Solution {
     //LeetCode
 }
 
-class SmallHead {
+class SmallHeap {
     private var array:[ListNode?] = [nil]
-    
-    public var max:Int = 0
     public var currentCount:Int = 0
     
-    init(_ nums: Int) {
-        self.array = [ListNode?](repeating: nil, count: nums)
-        self.max = nums
-        self.currentCount = 0
-    }
-    
-    func push(_ item: ListNode?) {
-        guard let item = item else { return }
+    init(_ array: [ListNode?]) {
+        self.array = array
+        self.currentCount = array.count
         
-        array[currentCount] = item
-        
-        currentCount += 1
-        
-        sort(array, currentCount)
+        var i = self.currentCount / 2 - 1
+        while i >= 0 {
+            sortDown(self.array, i)
+            i -= 1;
+        }
     }
     
     func pop() -> ListNode? {
         guard let item = array[0] else { return nil }
         
-        array[0] = array[currentCount - 1]
-        array[currentCount - 1] = nil
+        if item.next == nil {
+            array[0] = array[currentCount - 1]
+            array[currentCount - 1] = nil
+            currentCount -= 1
+        } else {
+            array[0] = item.next
+        }
         
-        currentCount -= 1
-        
-        sort(array, currentCount)
+        sortDown(array, 0)
         
         return item
     }
     
-    func sort(_ arr:[ListNode?], _ len:Int) {
-        var i = len / 2 - 1
-        
-        while i >= 0 {
-            /* 左节点 */
-            if 2 * i + 1 < len {
-                let root = array[i]?.val ?? Int(INT32_MAX)
-                let left = array[2 * i + 1]?.val ?? Int(INT32_MAX)
-                if root > left {
-                    let temp = array[i]
-                    array[i] = array[2 * i + 1]
-                    array[2 * i + 1] = temp
-                    
-                    if 2 * (2 * i + 1) + 1 < len {
-                        let root = array[2 * i + 1]?.val ?? Int(INT32_MAX)
-                        let left = array[2 * (2 * i + 1) + 1]?.val ?? Int(INT32_MAX)
-                        
-                        if root > left {
-                            sort(arr, len)
-                        }
-                    }
-                    
-                    if 2 * (2 * i + 1) + 2 < len {
-                        let root = array[2 * i + 1]?.val ?? Int(INT32_MAX)
-                        let right = array[2 * (2 * i + 1) + 2]?.val ?? Int(INT32_MAX)
-                        
-                        if root > right {
-                            sort(arr, len)
-                        }
-                    }
-                    
-                }
-                
-            }
-            
-            /* 右节点 */
-            if 2 * i + 2 < len {
-                let root = array[i]?.val ?? Int(INT32_MAX)
-                let right = array[2 * i + 2]?.val ?? Int(INT32_MAX)
-                
-                if root > right {
-                    let temp = array[i]
-                    array[i] = array[2 * i + 2]
-                    array[2 * i + 2] = temp
-                    
-                    if 2 * (2 * i + 2) + 1 < len {
-                        let root = array[2 * i + 2]?.val ?? Int(INT32_MAX)
-                        let left = array[2 * (2 * i + 2) + 1]?.val ?? Int(INT32_MAX)
-                        
-                        if root > left {
-                            sort(arr, len)
-                        }
-                    }
-                    
-                    if 2 * (2 * i + 2) + 2 < len {
-                        let root = array[2 * i + 2]?.val ?? Int(INT32_MAX)
-                        let right = array[2 * (2 * i + 2) + 2]?.val ?? Int(INT32_MAX)
-                        
-                        if root > right {
-                            sort(arr, len)
-                        }
-                    }
-                }
-                
-            }
-            
-            i -= 1
-        }
+    @inline(__always)
+    func getVal(_ i:Int) -> Int {
+        guard i < currentCount, let list = array[i] else { return Int(INT32_MAX) }
+        return list.val
     }
     
+    func sortDown(_ arr:[ListNode?], _ start:Int) {
+        let leftIndex = start * 2 + 1
+        let rightIndex = leftIndex + 1
+        
+        let rootValue = getVal(start)
+        let leftValue = getVal(leftIndex)
+        let rightValue = getVal(rightIndex)
+        
+        if leftValue < rootValue && leftValue < rightValue {
+            let temp = array[start]
+            array[start] = array[leftIndex]
+            array[leftIndex] = temp
+            
+            sortDown(arr, leftIndex)
+        } else if (rightValue < rootValue && rightValue <= leftValue) {
+            let temp = array[start]
+            array[start] = array[rightIndex]
+            array[rightIndex] = temp
+            
+            sortDown(arr, rightIndex)
+        }
+    }
 }

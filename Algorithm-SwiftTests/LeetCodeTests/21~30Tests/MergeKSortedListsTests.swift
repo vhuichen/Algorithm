@@ -23,17 +23,6 @@ class MergeKSortedListsTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
-//        Input: lists = [[1,4,5],[1,3,4],[2,6]]
-//        Output: [1,1,2,3,4,4,5,6]
-//        Explanation: The linked-lists are:
-//        [
-//          1->4->5,
-//          1->3->4,
-//          2->6
-//        ]
-//        merging them into one sorted list:
-//        1->1->2->3->4->4->5->6
-
         let solution = Solution()
         
         var lists = [ListNode?]()
@@ -100,6 +89,10 @@ class MergeKSortedListsTests: XCTestCase {
         }
         XCTAssert(head.next == nil)
         
+        list = ListNode(1)
+        
+        result = solution.mergeKLists([list])
+        XCTAssert(result?.val == 1)
     }
 
     func testPerformanceExample() throws {
