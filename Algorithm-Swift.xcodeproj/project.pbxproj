@@ -20,6 +20,10 @@
 		2E5ACD6925AA00AB00F0D222 /* MergeKSortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5ACD6825AA00AB00F0D222 /* MergeKSortedLists.swift */; };
 		2E5ACD6D25AA00B900F0D222 /* MergeKSortedListsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5ACD6C25AA00B900F0D222 /* MergeKSortedListsTests.swift */; };
 		2E5ACD7225AB048200F0D222 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5ACD7125AB048200F0D222 /* Base.swift */; };
+		2E5ACD7825AC92F400F0D222 /* SwapNodesInPairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5ACD7725AC92F400F0D222 /* SwapNodesInPairs.swift */; };
+		2E5ACD7C25AC931800F0D222 /* ReverseNodesInKGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5ACD7B25AC931800F0D222 /* ReverseNodesInKGroup.swift */; };
+		2E5ACD8025AC932400F0D222 /* ReverseNodesInKGroupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5ACD7F25AC932400F0D222 /* ReverseNodesInKGroupTests.swift */; };
+		2E5ACD8425AC933200F0D222 /* SwapNodesInPairsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5ACD8325AC933200F0D222 /* SwapNodesInPairsTests.swift */; };
 		2E5E89C9257CA506000A6C02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E89C8257CA506000A6C02 /* AppDelegate.swift */; };
 		2E5E89CB257CA506000A6C02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E89CA257CA506000A6C02 /* SceneDelegate.swift */; };
 		2E5E89CD257CA506000A6C02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E89CC257CA506000A6C02 /* ViewController.swift */; };
@@ -86,6 +90,10 @@
 		2E5ACD6825AA00AB00F0D222 /* MergeKSortedLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeKSortedLists.swift; sourceTree = "<group>"; };
 		2E5ACD6C25AA00B900F0D222 /* MergeKSortedListsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeKSortedListsTests.swift; sourceTree = "<group>"; };
 		2E5ACD7125AB048200F0D222 /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		2E5ACD7725AC92F400F0D222 /* SwapNodesInPairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapNodesInPairs.swift; sourceTree = "<group>"; };
+		2E5ACD7B25AC931800F0D222 /* ReverseNodesInKGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseNodesInKGroup.swift; sourceTree = "<group>"; };
+		2E5ACD7F25AC932400F0D222 /* ReverseNodesInKGroupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseNodesInKGroupTests.swift; sourceTree = "<group>"; };
+		2E5ACD8325AC933200F0D222 /* SwapNodesInPairsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapNodesInPairsTests.swift; sourceTree = "<group>"; };
 		2E5E89C5257CA505000A6C02 /* Algorithm-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Algorithm-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E5E89C8257CA506000A6C02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E5E89CA257CA506000A6C02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -190,6 +198,8 @@
 				2E5A4CD925A8201900334ECF /* MergeTwoSortedLists.swift */,
 				2E8A18B925A8BC8900662AE5 /* GenerateParentheses.swift */,
 				2E5ACD6825AA00AB00F0D222 /* MergeKSortedLists.swift */,
+				2E5ACD7725AC92F400F0D222 /* SwapNodesInPairs.swift */,
+				2E5ACD7B25AC931800F0D222 /* ReverseNodesInKGroup.swift */,
 			);
 			path = "21~30";
 			sourceTree = "<group>";
@@ -234,6 +244,8 @@
 				2E5A4CDD25A8202700334ECF /* MergeTwoSortedListsTests.swift */,
 				2E8A18BD25A8BCBE00662AE5 /* GenerateParenthesesTests.swift */,
 				2E5ACD6C25AA00B900F0D222 /* MergeKSortedListsTests.swift */,
+				2E5ACD8325AC933200F0D222 /* SwapNodesInPairsTests.swift */,
+				2E5ACD7F25AC932400F0D222 /* ReverseNodesInKGroupTests.swift */,
 			);
 			path = "21~30Tests";
 			sourceTree = "<group>";
@@ -417,6 +429,7 @@
 				2E8A18AE25A7748A00662AE5 /* RemoveNthNodeFromEndOfList.swift in Sources */,
 				2E59E35B259B359A00C32718 /* StringToInteger(atoi).swift in Sources */,
 				2EEA459D258703C60091EBD6 /* LongestPalindrome.swift in Sources */,
+				2E5ACD7825AC92F400F0D222 /* SwapNodesInPairs.swift in Sources */,
 				2E5E89CD257CA506000A6C02 /* ViewController.swift in Sources */,
 				2E87130D25A2AEC50002A851 /* IntegerToRoman.swift in Sources */,
 				2E8A18492582864C00662AE5 /* LengthOfLongestSubstring.swift in Sources */,
@@ -425,6 +438,7 @@
 				2E5A4B7D25A7F2FB00334ECF /* ValidParentheses.swift in Sources */,
 				2E8A18512585005A00662AE5 /* FindMedianSortedArrays.swift in Sources */,
 				2E59E34F259B1C6700C32718 /* ReverseInteger.swift in Sources */,
+				2E5ACD7C25AC931800F0D222 /* ReverseNodesInKGroup.swift in Sources */,
 				2E5E89C9257CA506000A6C02 /* AppDelegate.swift in Sources */,
 				2E88C11425A7177D007CD62B /* LetterCombinationsOfPhoneNumber.swift in Sources */,
 				2E8A184A2582864C00662AE5 /* TwoSum.swift in Sources */,
@@ -445,6 +459,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E5ACD6D25AA00B900F0D222 /* MergeKSortedListsTests.swift in Sources */,
+				2E5ACD8425AC933200F0D222 /* SwapNodesInPairsTests.swift in Sources */,
 				2E8673CA259D65FF00ACE7E4 /* PalindromeNumberTests.swift in Sources */,
 				2E8A18BE25A8BCBE00662AE5 /* GenerateParenthesesTests.swift in Sources */,
 				2E59E0AD259AC72F00C32718 /* ZigZagConversionTests.swift in Sources */,
@@ -453,6 +468,7 @@
 				2E87131125A2AED30002A851 /* IntegerToRomanTests.swift in Sources */,
 				2E8A188A25A211F500662AE5 /* ContainerWithMostWaterTests.swift in Sources */,
 				2E5E8A4A257CAE67000A6C02 /* TwoSumTests.swift in Sources */,
+				2E5ACD8025AC932400F0D222 /* ReverseNodesInKGroupTests.swift in Sources */,
 				2E87131D25A2E83A0002A851 /* RomanToIntegerTests.swift in Sources */,
 				2E9B6C5E257E0027005600ED /* AddTwoNumbersTests.swift in Sources */,
 				2E8A183E258285AF00662AE5 /* LongestSubstringTests.swift in Sources */,

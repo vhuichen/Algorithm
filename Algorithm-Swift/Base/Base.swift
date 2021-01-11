@@ -80,3 +80,19 @@ class SmallHeap {
         }
     }
 }
+
+class CommomClass {
+    class func list(_ array:[Int]) -> ListNode? {
+        guard array.count > 0 else { return nil }
+        
+        let heap = ListNode(-1)
+        var tail = heap
+        
+        for item in array {
+            tail.next = ListNode(item)
+            tail = tail.next!
+        }
+        
+        return heap.next
+    }
+}
