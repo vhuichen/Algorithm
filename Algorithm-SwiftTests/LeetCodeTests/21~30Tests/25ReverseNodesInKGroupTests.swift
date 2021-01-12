@@ -24,13 +24,28 @@ class ReverseNodesInKGroupTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
         let head = [1,2,3,4,5]
-        let output = [3,2,1,4,5]
+        var output = [3,2,1,4,5]
         
         let solution = Solution()
-        let list = CommomClass.list(head)
-        var result = solution.reverseKGroup(list, 2)
+        var list = CommomClass.list(head)
+        var result = solution.reverseKGroup(list, 3)
         
         var outputList = CommomClass.list(output)
+        
+        repeat {
+            XCTAssert(result?.val == outputList?.val)
+            
+            result = result?.next
+            outputList = outputList?.next
+            
+        } while result != nil || outputList != nil
+        
+        
+        list = CommomClass.list(head)
+        result = solution.reverseKGroup(list, 2)
+        
+        output = [2,1,4,3,5]
+        outputList = CommomClass.list(output)
         
         repeat {
             XCTAssert(result?.val == outputList?.val)
