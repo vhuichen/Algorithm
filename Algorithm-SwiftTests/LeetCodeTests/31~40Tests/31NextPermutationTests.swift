@@ -1,15 +1,15 @@
 //
-//  206ReverseLinkedListTests.swift
+//  31NextPermutationTests.swift
 //  Algorithm-SwiftTests
 //
-//  Created by chenhui on 2021/1/12.
+//  Created by chenhui on 2021/1/20.
 //  Copyright © 2021 vhuichen. All rights reserved.
 //
 
 import XCTest
 @testable import Algorithm_Swift
 
-class ReverseLinkedListTests: XCTestCase {
+class NextPermutationTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -23,21 +23,26 @@ class ReverseLinkedListTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
-        let input = [1,2,3,4,5]
-        let output = [5,4,3,2,1]
-        
         let solution = Solution()
-        let inputList = CommomClass.list(input)
-        var outputList = CommomClass.list(output)
+        var array = [1,2,3]
+        solution.nextPermutation(&array)
+        XCTAssert(array == [1,3,2])
         
-        var result = solution.reverseList(inputList)
+        array = [3,2,1]
+        solution.nextPermutation(&array)
+        XCTAssert(array == [1,2,3])
         
-        while result != nil, outputList != nil {
-            XCTAssert(result?.val == outputList?.val)
-            
-            result = result?.next
-            outputList = outputList?.next
-        }
+        array = [1,1,5]
+        solution.nextPermutation(&array)
+        XCTAssert(array == [1,5,1])
+        
+        array = [1,3,2]
+        solution.nextPermutation(&array)
+        XCTAssert(array == [2,1,3])
+        
+        array = [2,3,1]
+        solution.nextPermutation(&array)
+        XCTAssert(array == [3,1,2])
         
     }
 
