@@ -27,9 +27,9 @@ class ReverseLinkedListTests: XCTestCase {
         let output = [5,4,3,2,1]
         
         let solution = Solution()
-        let inputList = CommomClass.list(input)
-        var outputList = CommomClass.list(output)
-        
+        let inputList = CommonListNode.list(input)
+        var outputList = CommonListNode.list(output)
+        //
         var result = solution.reverseList(inputList)
         
         while result != nil, outputList != nil {

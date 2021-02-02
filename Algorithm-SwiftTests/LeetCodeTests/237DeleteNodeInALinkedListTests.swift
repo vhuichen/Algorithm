@@ -1,20 +1,20 @@
 //
-//  SwapNodesInPairsTests.swift
+//  237DeleteNodeInALinkedListTests.swift
 //  Algorithm-SwiftTests
 //
-//  Created by chenhui on 2021/1/11.
+//  Created by chenhui on 2021/1/31.
 //  Copyright © 2021 vhuichen. All rights reserved.
 //
 
 import XCTest
 @testable import Algorithm_Swift
 
-class SwapNodesInPairsTests: XCTestCase {
+class DeleteNodeInALinkedListTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
-    
+
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
@@ -23,23 +23,28 @@ class SwapNodesInPairsTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
-        let head = [1,2,3,4]
-        let output = [2,1,4,3]
-        
         let solution = Solution()
-        let list = CommonListNode.list(head)
-        var result = solution.swapPairs(list)
         
-        var outputList = CommonListNode.list(output)
+        var list = CommonListNode.list([1,2,3,4,5,7,8,9,0])
+        var delete = list?.next?.next?.next?.next?.next
+        var result = CommonListNode.list([1,2,3,4,5,8,9,0])
         
-        repeat {
-            XCTAssert(result?.val == outputList?.val)
-            
-            result = result?.next
-            outputList = outputList?.next
-            
-        } while result != nil || outputList != nil
+        solution.deleteNode(delete)
+        XCTAssert(CommonListNode.isEqual(result, list))
         
+        list = CommonListNode.list([1,2,3,4,5,7,8,9,0])
+        delete = list
+        result = CommonListNode.list([2,3,4,5,7,8,9,0])
+        
+        solution.deleteNode(delete)
+        XCTAssert(CommonListNode.isEqual(result, list))
+        
+        list = CommonListNode.list([1,0])
+        delete = list
+        result = CommonListNode.list([0])
+        
+        solution.deleteNode(delete)
+        XCTAssert(CommonListNode.isEqual(result, list))
     }
 
     func testPerformanceExample() throws {

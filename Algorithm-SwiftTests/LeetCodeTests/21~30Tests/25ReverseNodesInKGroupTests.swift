@@ -27,10 +27,10 @@ class ReverseNodesInKGroupTests: XCTestCase {
         var output = [3,2,1,4,5]
         
         let solution = Solution()
-        var list = CommomClass.list(head)
+        var list = CommonListNode.list(head)
         var result = solution.reverseKGroup(list, 3)
         
-        var outputList = CommomClass.list(output)
+        var outputList = CommonListNode.list(output)
         
         repeat {
             XCTAssert(result?.val == outputList?.val)
@@ -41,11 +41,11 @@ class ReverseNodesInKGroupTests: XCTestCase {
         } while result != nil || outputList != nil
         
         
-        list = CommomClass.list(head)
+        list = CommonListNode.list(head)
         result = solution.reverseKGroup(list, 2)
         
         output = [2,1,4,3,5]
-        outputList = CommomClass.list(output)
+        outputList = CommonListNode.list(output)
         
         repeat {
             XCTAssert(result?.val == outputList?.val)

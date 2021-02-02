@@ -8,14 +8,6 @@
 
 import Foundation
 
-class ListNode {
-     public var val: Int
-     public var next: ListNode?
-     public init() { self.val = 0; self.next = nil; }
-     public init(_ val: Int) { self.val = val; self.next = nil; }
-     public init(_ val: Int, _ next: ListNode?) { self.val = val; self.next = next; }
-}
-
 class Solution {
     //LeetCode
 }
@@ -78,21 +70,5 @@ class SmallHeap {
             
             sortDown(arr, rightIndex)
         }
-    }
-}
-
-class CommomClass {
-    class func list(_ array:[Int]) -> ListNode? {
-        guard array.count > 0 else { return nil }
-        
-        let heap = ListNode(-1)
-        var tail = heap
-        
-        for item in array {
-            tail.next = ListNode(item)
-            tail = tail.next!
-        }
-        
-        return heap.next
     }
 }

@@ -1,20 +1,19 @@
 //
-//  SwapNodesInPairsTests.swift
+//  102BinaryTreeLevelOrderTraversalTests.swift
 //  Algorithm-SwiftTests
 //
-//  Created by chenhui on 2021/1/11.
-//  Copyright © 2021 vhuichen. All rights reserved.
+//  Created by chenhui on 2021/2/2.
 //
 
 import XCTest
 @testable import Algorithm_Swift
 
-class SwapNodesInPairsTests: XCTestCase {
+class BinaryTreeLevelOrderTraversalTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
-    
+
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
@@ -22,24 +21,15 @@ class SwapNodesInPairsTests: XCTestCase {
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        
-        let head = [1,2,3,4]
-        let output = [2,1,4,3]
-        
         let solution = Solution()
-        let list = CommonListNode.list(head)
-        var result = solution.swapPairs(list)
         
-        var outputList = CommonListNode.list(output)
+        var treeNode = CommonTreeNode.Tree([1,nil,3,4,5])
+        var result = solution.levelOrder(treeNode)
+        XCTAssert(result == [[1],[3],[4,5]])
         
-        repeat {
-            XCTAssert(result?.val == outputList?.val)
-            
-            result = result?.next
-            outputList = outputList?.next
-            
-        } while result != nil || outputList != nil
-        
+        treeNode = CommonTreeNode.Tree([3,9,20,nil,nil,15,7])
+        result = solution.levelOrder(treeNode)
+        XCTAssert(result == [[3],[9,20],[15,7]])
     }
 
     func testPerformanceExample() throws {
