@@ -8,11 +8,39 @@
 import Foundation
 
 extension Solution {
-    
-    
-    
-    
-    
+    //动态规划
+    func longestValidParentheses(_ s: String) -> Int {
+        let sArray = Array(s)
+        
+        guard sArray.count > 1 else { return 0 }
+        
+        var dp = [Int](repeating: 0, count: sArray.count)
+        var longest = 0
+        
+        for i in 1..<sArray.count where sArray[i] == ")" {
+            if sArray[i - 1] == "(" {
+                if i > 2 {
+                    dp[i] = dp[i - 2] + 2
+                } else {
+                    dp[i] =  2
+                }
+                longest = max(longest, dp[i])
+            } else if (sArray[i - 1] == ")") {
+                var j = i - dp[i - 1] - 1
+                if j >= 0 && sArray[j] == "(" {
+                    j -= 1
+                    if j > 0 {
+                        dp[i] = dp[i - 1] + 2 + dp[j]
+                    } else {
+                        dp[i] = dp[i - 1] + 2
+                    }
+                    longest = max(longest, dp[i])
+                }
+            }
+        }
+        
+        return longest
+    }
     
     /*
     //栈

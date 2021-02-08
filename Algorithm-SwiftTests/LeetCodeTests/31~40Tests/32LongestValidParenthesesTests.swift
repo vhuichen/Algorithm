@@ -28,6 +28,7 @@ class LongestValidParenthesesTests: XCTestCase {
         XCTAssert(solution.longestValidParentheses("(()") == 2)
         XCTAssert(solution.longestValidParentheses(")()())") == 4)
         XCTAssert(solution.longestValidParentheses("((()))()()()") == 12)
+        XCTAssert(solution.longestValidParentheses("(()()))((()))(((()))())()()()((()))(()))(())())((((((())))))))()()()()((((())))))))))()()()(") == 32)
     }
 
     func testPerformanceExample() throws {
