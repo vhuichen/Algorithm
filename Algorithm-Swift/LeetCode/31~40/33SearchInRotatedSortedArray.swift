@@ -8,6 +8,8 @@
 import Foundation
 
 extension Solution {
+    
+    //直接利用二分思想
     func search(_ nums: [Int], _ target: Int) -> Int {
         var left = 0
         var right = nums.count - 1
@@ -23,13 +25,13 @@ extension Solution {
                 if nums[mid] < target && nums.last! >= target {
                     left = mid + 1
                 } else {
-                    right = mid
+                    right = mid - 1
                 }
             } else {
                 if nums[mid] > target && nums.first! <= target {
                     right = mid - 1
                 } else {
-                    left = mid
+                    left = mid + 1
                 }
             }
         }
@@ -51,12 +53,12 @@ extension Solution {
             if nums[mid - 1] > nums[mid] {
                 middle = mid
                 break
+            }
+            
+            if (nums.first! < nums[mid]) {
+                left = mid
             } else {
-                if (nums.first! < nums[mid]) {
-                    left = mid
-                } else {
-                    right = mid
-                }
+                right = mid
             }
         }
         
@@ -67,25 +69,21 @@ extension Solution {
             left = middle
             right = nums.count - 1
         } else {
-            left = 0
-            right = 0
+            return -1
         }
         
-        while left < right {
+        while left <= right {
             let mid = left + (right - left + 1) / 2
             
             if nums[mid] == target {
                 index = mid
                 break
-            } else if (nums[mid] < target) {
+            }
+            if (nums[mid] < target) {
                 left = mid + 1
             } else {
                 right = mid - 1
             }
-        }
-        
-        if nums[left] == target {
-            index = left
         }
         
         return index
