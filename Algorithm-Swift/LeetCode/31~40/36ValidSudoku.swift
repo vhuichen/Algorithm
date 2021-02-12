@@ -18,7 +18,7 @@ extension Solution {
                 guard board[i][j] != "." else { continue }
                 
                 let square_x = (j / 3) + i - (i % 3)
-                                
+                
                 let num = Int(board[i][j].asciiValue! - 49)
                 
                 if columns[j][num] || rows[i][num] || squares[square_x][num] {
