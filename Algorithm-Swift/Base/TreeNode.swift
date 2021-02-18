@@ -30,6 +30,8 @@ class TreeNode {
 
 class CommonTreeNode {
     class func Tree(_ array:[Int?]) -> TreeNode? {
+        guard !array.isEmpty else { return nil }
+        
         let sum:Decimal = pow(2, array.count / 2 + 1)
         let count:Int = Int(truncating: NSDecimalNumber(decimal: sum))
         var arrayTreeIndex = 0
