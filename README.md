@@ -1,4 +1,4 @@
-# Algorithm-Swift
+# Algorithm
 Swift编写 ，XCTest单元测试   
 
 LeetCode 已完成至：1~37、94、95、96、98、100、102、144、145、206、237
