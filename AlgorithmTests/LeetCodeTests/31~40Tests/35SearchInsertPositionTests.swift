@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import Algorithm_Swift
+@testable import Algorithm
 
 class SearchInsertPositionTests: XCTestCase {
 

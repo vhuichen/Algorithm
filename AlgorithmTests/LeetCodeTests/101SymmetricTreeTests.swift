@@ -1,16 +1,15 @@
 //
-//  20.swift
+//  101SymmetricTreeTests.swift
 //  AlgorithmTests
 //
-//  Created by vchan on 2021/1/8.
-//  Copyright © 2021 vhuichen. All rights reserved.
+//  Created by vchan on 2021/2/27.
 //
 
 import XCTest
 @testable import Algorithm
 
-class ValidParenthesesTests: XCTestCase {
-    
+class SymmetricTreeTests: XCTestCase {
+
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -22,18 +21,13 @@ class ValidParenthesesTests: XCTestCase {
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        
         let solution = Solution()
         
-        XCTAssert(solution.isValid("()") == true)
-        XCTAssert(solution.isValid("{}") == true)
-        XCTAssert(solution.isValid("[]") == true)
-        XCTAssert(solution.isValid("()[]{}") == true)
-        XCTAssert(solution.isValid("(]") == false)
-        XCTAssert(solution.isValid("([)]") == false)
-        XCTAssert(solution.isValid("{[]}") == true)
-        XCTAssert(solution.isValid("{[()]}") == true)
-        XCTAssert(solution.isValid("(){()[()]()}[]") == true)
+        var list = CommonTreeNode.Tree([1,2,2,3,4,4,3])
+        XCTAssert(solution.isSymmetric(list) == true)
+        
+        list = CommonTreeNode.Tree([1,2,2,nil,3,nil,3])
+        XCTAssert(solution.isSymmetric(list) == false)
     }
 
     func testPerformanceExample() throws {

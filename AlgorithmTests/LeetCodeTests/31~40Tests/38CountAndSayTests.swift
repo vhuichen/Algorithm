@@ -1,16 +1,15 @@
 //
-//  20.swift
+//  38CountAndSayTests.swift
 //  AlgorithmTests
 //
-//  Created by vchan on 2021/1/8.
-//  Copyright © 2021 vhuichen. All rights reserved.
+//  Created by vchan on 2021/2/27.
 //
 
 import XCTest
 @testable import Algorithm
 
-class ValidParenthesesTests: XCTestCase {
-    
+class CountAndSayTests: XCTestCase {
+
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -25,15 +24,11 @@ class ValidParenthesesTests: XCTestCase {
         
         let solution = Solution()
         
-        XCTAssert(solution.isValid("()") == true)
-        XCTAssert(solution.isValid("{}") == true)
-        XCTAssert(solution.isValid("[]") == true)
-        XCTAssert(solution.isValid("()[]{}") == true)
-        XCTAssert(solution.isValid("(]") == false)
-        XCTAssert(solution.isValid("([)]") == false)
-        XCTAssert(solution.isValid("{[]}") == true)
-        XCTAssert(solution.isValid("{[()]}") == true)
-        XCTAssert(solution.isValid("(){()[()]()}[]") == true)
+        XCTAssert(solution.countAndSay(1) == "1")
+        XCTAssert(solution.countAndSay(2) == "11")
+        XCTAssert(solution.countAndSay(3) == "21")
+        XCTAssert(solution.countAndSay(4) == "1211")
+        XCTAssert(solution.countAndSay(5) == "111221")
     }
 
     func testPerformanceExample() throws {

@@ -1,16 +1,15 @@
 //
-//  20.swift
+//  40CombinationSumIITests.swift
 //  AlgorithmTests
 //
-//  Created by vchan on 2021/1/8.
-//  Copyright © 2021 vhuichen. All rights reserved.
+//  Created by vchan on 2021/2/27.
 //
 
 import XCTest
 @testable import Algorithm
 
-class ValidParenthesesTests: XCTestCase {
-    
+class CombinationSumIITests: XCTestCase {
+
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -25,15 +24,8 @@ class ValidParenthesesTests: XCTestCase {
         
         let solution = Solution()
         
-        XCTAssert(solution.isValid("()") == true)
-        XCTAssert(solution.isValid("{}") == true)
-        XCTAssert(solution.isValid("[]") == true)
-        XCTAssert(solution.isValid("()[]{}") == true)
-        XCTAssert(solution.isValid("(]") == false)
-        XCTAssert(solution.isValid("([)]") == false)
-        XCTAssert(solution.isValid("{[]}") == true)
-        XCTAssert(solution.isValid("{[()]}") == true)
-        XCTAssert(solution.isValid("(){()[()]()}[]") == true)
+        XCTAssert(solution.combinationSum2([10,1,2,7,6,1,5], 8) == [[1,1,6],[1,2,5],[1,7],[2,6]])
+        XCTAssert(solution.combinationSum2([2,5,2,1,2], 5) == [[1,2,2],[5]])
     }
 
     func testPerformanceExample() throws {
