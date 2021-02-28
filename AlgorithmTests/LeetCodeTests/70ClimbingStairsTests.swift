@@ -1,14 +1,14 @@
 //
-//  99RecoverBinarySearchTreeTests.swift
+//  70ClimbingStairsTests.swift
 //  AlgorithmTests
 //
-//  Created by vchan on 2021/2/27.
+//  Created by vchan on 2021/2/28.
 //
 
 import XCTest
 @testable import Algorithm
 
-class RecoverBinarySearchTreeTests: XCTestCase {
+class ClimbingStairsTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -23,16 +23,10 @@ class RecoverBinarySearchTreeTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
         let solution = Solution()
-        
-        var tree = CommonTreeNode.Tree([1,3,nil,nil,2])
-        solution.recoverTree(tree)
-        var result = solution.levelOrder(tree).flatMap {$0}
-        XCTAssert(result == [3,1,2])
-        
-        tree = CommonTreeNode.Tree([3,1,4,nil,nil,2])
-        solution.recoverTree(tree)
-        result = solution.levelOrder(tree).flatMap {$0}
-        XCTAssert(result == [2,1,4,3])
+        XCTAssert(solution.climbStairs(1) == 1)
+        XCTAssert(solution.climbStairs(2) == 2)
+        XCTAssert(solution.climbStairs(3) == 3)
+        XCTAssert(solution.climbStairs(9) == 55)
     }
 
     func testPerformanceExample() throws {

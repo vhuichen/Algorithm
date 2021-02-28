@@ -1,14 +1,14 @@
 //
-//  99RecoverBinarySearchTreeTests.swift
+//  225ImplementStackUsingQueuesTests.swift
 //  AlgorithmTests
 //
-//  Created by vchan on 2021/2/27.
+//  Created by vchan on 2021/2/28.
 //
 
 import XCTest
 @testable import Algorithm
 
-class RecoverBinarySearchTreeTests: XCTestCase {
+class ImplementStackUsingQueuesTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -22,17 +22,17 @@ class RecoverBinarySearchTreeTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
-        let solution = Solution()
-        
-        var tree = CommonTreeNode.Tree([1,3,nil,nil,2])
-        solution.recoverTree(tree)
-        var result = solution.levelOrder(tree).flatMap {$0}
-        XCTAssert(result == [3,1,2])
-        
-        tree = CommonTreeNode.Tree([3,1,4,nil,nil,2])
-        solution.recoverTree(tree)
-        result = solution.levelOrder(tree).flatMap {$0}
-        XCTAssert(result == [2,1,4,3])
+        let obj = MyStack()
+        XCTAssert(obj.empty() == true)
+        obj.push(1)
+        XCTAssert(obj.empty() == false)
+        obj.push(2)
+        XCTAssert(obj.top() == 2)
+        XCTAssert(obj.pop() == 2)
+        XCTAssert(obj.top() == 1)
+        XCTAssert(obj.empty() == false)
+        XCTAssert(obj.pop() == 1)
+        XCTAssert(obj.empty() == true)
     }
 
     func testPerformanceExample() throws {
