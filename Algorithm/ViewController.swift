@@ -9,16 +9,107 @@
 import UIKit
 
 class ViewController: UIViewController {
+    func xxxx2(_ m: Int) {
+        //1 5 7
+        var dp = [Int](repeating: 0, count: m)
+        dp[0] = 1
+        dp[1] = 2
+        dp[2] = 3
+        dp[3] = 4
+        dp[4] = 1
+        dp[5] = 2
+        dp[6] = 1
+        
+        for i in 7..<m {
+            let sum1 = dp[i - 1]
+            let sum5 = dp[i - 5]
+            let sum7 = dp[i - 7]
+            
+            if sum1 < sum5 && sum1 < sum7 {
+                dp[i] = sum1 + 1
+            } else if sum5 < sum1 && sum5 < sum7 {
+                dp[i] = sum5 + 1
+            } else {
+                dp[i] = sum7 + 1
+            }
+        }
+        
+        print(dp)
+        
+    }
+    
+    func xxxx(_ m: Int) {
+        //1 5 7
+        var dp = [(Int, Int, Int)](repeating: (0, 0, 0), count: m)
+        dp[0] = (1,0,0)
+        dp[1] = (2,0,0)
+        dp[2] = (3,0,0)
+        dp[3] = (4,0,0)
+        dp[4] = (0,1,0)
+        dp[5] = (1,1,0)
+        dp[6] = (0,0,1)
+        
+        for i in 7..<m {
+            var temp1 = dp[i - 1]
+            var temp5 = dp[i - 5]
+            var temp7 = dp[i - 7]
+            let sum1 = temp1.0 + temp1.1 + temp1.2
+            let sum5 = temp5.0 + temp5.1 + temp5.2
+            let sum7 = temp7.0 + temp7.1 + temp7.2
+            
+            if sum1 < sum5 && sum1 < sum7 {
+                temp1.0 += 1
+                dp[i] = temp1
+            } else if sum5 < sum1 && sum5 < sum7 {
+                temp5.1 += 1
+                dp[i] = temp5
+            } else {
+                temp7.2 += 1
+                dp[i] = temp7
+            }
+        }
+        
+        print(dp)
+    }
+    
+    //a的b次幂
+    //3^3 = 3^(1+2) = 3*9
+    func poww(_ a: Int, _ b: Int) -> Int {
+        if a == 0 || a == 1 { return a }
+        var ans = 1
+        var b = b
+        var base = a
+        
+        while b > 0 {
+            if b & 1 != 0 {
+                ans *= base
+            }
+            base *= base
+            b >>= 1
+        }
+        
+        return ans
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        if(Solution().uniquePaths(3,7) == 28) {
-            print("")
-        }
-        Solution().merge([[1,3],[2,6],[8,10],[15,18]])
-        Solution().findKthLargest1([3,2,1,5,6,4], 4)
+//        if(Solution().uniquePaths(3,7) == 28) {
+//            print("")
+//        }
+//        Solution().merge([[1,3],[2,6],[8,10],[15,18]])
+//        Solution().findKthLargest1([3,2,1,5,6,4], 4)
+//        xxxx(100)
+//        xxxx2(100)
         
+        assert(poww(0,3) == Int(pow(0.0, 3)))
+        assert(poww(1,3) == Int(pow(1.0, 3)))
+        assert(poww(3,3) == Int(pow(3.0, 3)))
+        assert(poww(2,2) == Int(pow(2.0, 2)))
+        assert(poww(3,10) == Int(pow(3.0, 10)))
+        assert(poww(3,10) == Int(pow(3.0, 10)))
+        assert(poww(-3,10) == Int(pow(-3.0, 10)))
+        assert(poww(-5,5) == Int(pow(-5.0, 5)))
     }
 }
 
@@ -485,3 +576,56 @@ extension Solution {
         return slow
     }
 }
+
+extension Solution {
+    class Solution {
+        func spiralOrder(_ matrix: [[Int]]) -> [Int] {
+            //往左 往下 往右
+            var direction = [Bool](repeating: true, count: 3)
+            var mMin = 0
+            var mMax = matrix.count - 1
+            var nMin = 0
+            var nMax = matrix[0].count - 1
+            let count = matrix.count * matrix[0].count
+            var result = [Int](repeating: 0, count: count)
+            var i = 0
+            
+            while i < count {
+                if direction[0] {
+                    for n in nMin...nMax {
+                        result[i] = matrix[mMin][n]
+                        i += 1
+                    }
+                    direction[0] = false
+                    direction[1] = true
+                    mMin += 1
+                } else if direction[1] {
+                    for m in mMin...mMax {
+                        result[i] = matrix[m][nMax]
+                        i += 1
+                    }
+                    direction[1] = false
+                    direction[2] = true
+                    nMax -= 1
+                } else if direction[2] {
+                    for n in (nMin...nMax).reversed() {
+                        result[i] = matrix[mMax][n]
+                        i += 1
+                    }
+                    direction[2] = false
+                    mMax -= 1
+                } else {
+                    for m in (mMin...mMax).reversed() {
+                        result[i] = matrix[m][nMin]
+                        i += 1
+                    }
+                    direction[0] = true
+                    nMin += 1
+                }
+            }
+            
+            return result
+        }
+    }
+}
+

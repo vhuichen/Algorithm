@@ -8,8 +8,8 @@
 import Foundation
 
 //程序员面试金典 10.01
+//等同于LeetCode88
 extension Solution {
-    //等同于LeetCode88
     /*
     func merge(_ A: inout [Int], _ m: Int, _ B: [Int], _ n: Int) {
         var first = m - 1
