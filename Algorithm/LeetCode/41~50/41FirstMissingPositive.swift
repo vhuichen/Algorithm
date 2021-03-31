@@ -29,4 +29,27 @@ extension Solution {
         
         return nums.count + 1
     }
+    
+    func firstMissingPositive2(_ nums: [Int]) -> Int {
+        var nums = nums
+        
+        for i in 0..<nums.count where nums[i] <= 0 {
+            nums[i] = nums.count + 1
+        }
+        
+        for i in 0..<nums.count {
+            let num = abs(nums[i]) - 1
+            if num >= 0 && num < nums.count && nums[num] > 0 {
+                nums[num] = -nums[num]
+            }
+        }
+        
+        for i in 0..<nums.count {
+            if nums[i] > 0 {
+                return i + 1
+            }
+        }
+        
+        return nums.count + 1
+    }
 }
