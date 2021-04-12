@@ -8,7 +8,7 @@
 import Foundation
 
 extension Solution {
-    /*
+    
     func coinChange(_ coins: [Int], _ amount: Int) -> Int {
         if amount == 0 { return 0 }
         
@@ -31,10 +31,26 @@ extension Solution {
         
         return dp[amount]
     }
-    */
+    
+    func coinChange2(_ coins: [Int], _ amount: Int) -> Int {
+        if amount == 0 { return 0 }
+        
+        var dp = [Int](repeating: amount + 1, count: amount + 1)
+        dp[0] = 0
+        for num in 1...amount {
+            for coin in coins {
+                let last = num - coin
+                if last >= 0 {
+                    dp[num] = min(dp[last] + 1, dp[num])
+                }
+            }
+        }
+        
+        return dp[amount] > amount ? -1 : dp[amount]
+    }
     
     //dfs
-    func coinChange(_ coins: [Int], _ amount: Int) -> Int {
+    func coinChange1(_ coins: [Int], _ amount: Int) -> Int {
         if amount == 0 { return 0 }
         
         var result = Int.max
@@ -68,5 +84,4 @@ extension Solution {
         
         return result == Int.max ? -1 : result
     }
-    
 }

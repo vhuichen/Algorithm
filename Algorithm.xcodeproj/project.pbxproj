@@ -152,6 +152,7 @@
 		2E5E8B51261AE23F0028BA43 /* 169MajorityElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E8B50261AE23F0028BA43 /* 169MajorityElement.swift */; };
 		2E5E8B55261AE2A00028BA43 /* 215KthLargestElementInArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E8B54261AE2A00028BA43 /* 215KthLargestElementInArray.swift */; };
 		2E5E8B59261AE4870028BA43 /* 105ConstructBinaryTreeFromPreorderAndInorderTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E8B58261AE4870028BA43 /* 105ConstructBinaryTreeFromPreorderAndInorderTraversal.swift */; };
+		2E5E8B6426249CE90028BA43 /* 61RotateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E8B6326249CE90028BA43 /* 61RotateList.swift */; };
 		2E61460025D0D78000A68510 /* 96UniqueBinarySearchTrees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6145FF25D0D78000A68510 /* 96UniqueBinarySearchTrees.swift */; };
 		2E61460625D0D7AC00A68510 /* 96UniqueBinarySearchTreesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E61460525D0D7AC00A68510 /* 96UniqueBinarySearchTreesTests.swift */; };
 		2E61460C25D0F2E500A68510 /* 32LongestValidParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E61460B25D0F2E500A68510 /* 32LongestValidParentheses.swift */; };
@@ -324,6 +325,7 @@
 		2E5E8B50261AE23F0028BA43 /* 169MajorityElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 169MajorityElement.swift; sourceTree = "<group>"; };
 		2E5E8B54261AE2A00028BA43 /* 215KthLargestElementInArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 215KthLargestElementInArray.swift; sourceTree = "<group>"; };
 		2E5E8B58261AE4870028BA43 /* 105ConstructBinaryTreeFromPreorderAndInorderTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 105ConstructBinaryTreeFromPreorderAndInorderTraversal.swift; sourceTree = "<group>"; };
+		2E5E8B6326249CE90028BA43 /* 61RotateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 61RotateList.swift; sourceTree = "<group>"; };
 		2E6145FF25D0D78000A68510 /* 96UniqueBinarySearchTrees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 96UniqueBinarySearchTrees.swift; sourceTree = "<group>"; };
 		2E61460525D0D7AC00A68510 /* 96UniqueBinarySearchTreesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 96UniqueBinarySearchTreesTests.swift; sourceTree = "<group>"; };
 		2E61460B25D0F2E500A68510 /* 32LongestValidParentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 32LongestValidParentheses.swift; sourceTree = "<group>"; };
@@ -453,6 +455,7 @@
 				2E67386725EC9F2300579236 /* 41~50 */,
 				2E5E8B5E261AE4DB0028BA43 /* 51~60 */,
 				2E52BDC625DEA1EA008EB525 /* 91~100 */,
+				2E5E8B6326249CE90028BA43 /* 61RotateList.swift */,
 				2E5E8B3A261ADF580028BA43 /* 62UniquePaths.swift */,
 				2E5E8B4C261AE1C10028BA43 /* 64MinimumPathSum.swift */,
 				2E52C0A125EB80F2008EB525 /* 66PlusOne.swift */,
@@ -463,6 +466,7 @@
 				2E5AD12F25C9842700F0D222 /* 102BinaryTreeLevelOrderTraversal.swift */,
 				2E5E8B58261AE4870028BA43 /* 105ConstructBinaryTreeFromPreorderAndInorderTraversal.swift */,
 				2E52C06F25EB476C008EB525 /* 121BestTimeToBuyAndSellStock.swift */,
+				2E5E8B44261AE04E0028BA43 /* 136SingleNumber.swift */,
 				2E52C0C825EE928D008EB525 /* 141LinkedListCycle.swift */,
 				2E5AD13D25C9994300F0D222 /* 144BinaryTreePreorderTraversal.swift */,
 				2E5AD14725C99A8100F0D222 /* 145BinaryTreePostorderTraversal.swift */,
@@ -474,9 +478,8 @@
 				2E5AD0A425C8359000F0D222 /* 237DeleteNodeInALinkedList.swift */,
 				2E5E8B25261ADD150028BA43 /* 240Search2DMatrixII.swift */,
 				2E52C09925EB7B2B008EB525 /* 283MoveZeroes.swift */,
-				2E5E8B11261A16170028BA43 /* 322CoinChange.swift */,
-				2E5E8B44261AE04E0028BA43 /* 136SingleNumber.swift */,
 				2E5E8B48261AE1000028BA43 /* 300LongestIncreasingSubsequence.swift */,
+				2E5E8B11261A16170028BA43 /* 322CoinChange.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -842,6 +845,7 @@
 				2E5AD0C425C8359000F0D222 /* 8StringToInteger(atoi).swift in Sources */,
 				2E67386A25EC9FB200579236 /* 41FirstMissingPositive.swift in Sources */,
 				2E52C05025EA41F5008EB525 /* 40CombinationSumII.swift in Sources */,
+				2E5E8B6426249CE90028BA43 /* 61RotateList.swift in Sources */,
 				2E52C05825EAA259008EB525 /* 99RecoverBinarySearchTree.swift in Sources */,
 				2E5E8B16261ADA130028BA43 /* 54SpiralMatrix.swift in Sources */,
 				2E5AD0D025C8359900F0D222 /* Base.swift in Sources */,

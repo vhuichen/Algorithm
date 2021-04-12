@@ -22,10 +22,11 @@ class CoinChangeTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         let solution = Solution()
-//        XCTAssert(solution.coinChange([1,2,5], 0) == 0)
-//        XCTAssert(solution.coinChange([1,2,5], 33) == 8)
-//        XCTAssert(solution.coinChange([186,419,83,408], 6249) == 20)
+        XCTAssert(solution.coinChange([1,2,5], 0) == 0)
+        XCTAssert(solution.coinChange([1,2,5], 33) == 8)
+        XCTAssert(solution.coinChange([186,419,83,408], 6249) == 20)
         XCTAssert(solution.coinChange([411,412,413,414,415,416,417,418,419,420,421,422], 9864) == 24)
+        XCTAssert(solution.coinChange([430,360,440,204,206,194,150,443], 3580) == 9)
     }
 
     func testPerformanceExample() throws {
