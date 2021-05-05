@@ -163,6 +163,7 @@
 		2E62C8CD25DE3F5200A9C34C /* 98ValidateBinarySearchTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E62C8CC25DE3F5200A9C34C /* 98ValidateBinarySearchTreeTests.swift */; };
 		2E67386A25EC9FB200579236 /* 41FirstMissingPositive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E67386925EC9FB200579236 /* 41FirstMissingPositive.swift */; };
 		2E67386E25EC9FC400579236 /* 41FirstMissingPositiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E67386D25EC9FC400579236 /* 41FirstMissingPositiveTests.swift */; };
+		2E707DE52642F1190011E781 /* 92ReverseLinkedListII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E707DE42642F1190011E781 /* 92ReverseLinkedListII.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -336,6 +337,7 @@
 		2E62C8CC25DE3F5200A9C34C /* 98ValidateBinarySearchTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 98ValidateBinarySearchTreeTests.swift; sourceTree = "<group>"; };
 		2E67386925EC9FB200579236 /* 41FirstMissingPositive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 41FirstMissingPositive.swift; sourceTree = "<group>"; };
 		2E67386D25EC9FC400579236 /* 41FirstMissingPositiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 41FirstMissingPositiveTests.swift; sourceTree = "<group>"; };
+		2E707DE42642F1190011E781 /* 92ReverseLinkedListII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 92ReverseLinkedListII.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -462,6 +464,7 @@
 				2E52C08125EB4DE9008EB525 /* 70ClimbingStairs.swift */,
 				2E5E8B19261ADAC40028BA43 /* 75SortColors.swift */,
 				2E52C0BC25EE8E95008EB525 /* 88MergeSortedArray.swift */,
+				2E707DE42642F1190011E781 /* 92ReverseLinkedListII.swift */,
 				2E52C03325E9E714008EB525 /* 101SymmetricTree.swift */,
 				2E5AD12F25C9842700F0D222 /* 102BinaryTreeLevelOrderTraversal.swift */,
 				2E5E8B58261AE4870028BA43 /* 105ConstructBinaryTreeFromPreorderAndInorderTraversal.swift */,
@@ -817,6 +820,7 @@
 				2E5AD1C525D4E68500F0D222 /* 37SudokuSolver.swift in Sources */,
 				2E5AD0BE25C8359000F0D222 /* 4FindMedianSortedArrays.swift in Sources */,
 				2E52C04025EA1738008EB525 /* 38CountAndSay.swift in Sources */,
+				2E707DE52642F1190011E781 /* 92ReverseLinkedListII.swift in Sources */,
 				2E5AD0BF25C8359000F0D222 /* 2AddTwoNumbers.swift in Sources */,
 				2E5AD04825C834BE00F0D222 /* ViewController.swift in Sources */,
 				2E5AD0B125C8359000F0D222 /* 30SubstringWithConcatenationOfAllWords.swift in Sources */,
